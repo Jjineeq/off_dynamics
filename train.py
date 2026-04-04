@@ -43,7 +43,7 @@ def eval_policy(policy, env, eval_episodes=10, eval_cnt=None):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument("--dir", default="./logs")
+    parser.add_argument("--dir", default="/logs")
     parser.add_argument("--policy", default="SAC", help='policy to use')
     parser.add_argument("--env", default="halfcheetah-friction")
     parser.add_argument('--srctype', default="medium", help='dataset type used in the source domain') # only useful when source domain is offline
