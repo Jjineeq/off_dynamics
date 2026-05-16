@@ -161,7 +161,10 @@ class DARA(object):
         # IQL hyperparameter
         self.lam = config['lam']
         self.temp = config['temp']
-        self.eta = config['eta']
+        if config['dara_eta'] != 0:
+            self.eta = config['dara_eta']
+        else:
+            self.eta = config['eta']
         
         self.total_it = 0
 
@@ -171,7 +174,7 @@ class DARA(object):
         self.target_q_funcs.eval()
         for p in self.target_q_funcs.parameters():
             p.requires_grad = False
-
+        self.config = config
         # aka value
         self.v_func = ValueFunc(config['state_dim'], config['action_dim'], hidden_size=config['hidden_sizes']).to(self.device)
 
@@ -190,7 +193,7 @@ class DARA(object):
     
     def select_action(self, state, test=True):
         with torch.no_grad():
-            action, _, mean = self.policy(torch.Tensor(state).view(1,-1).to(self.device))
+            action, _, mean = self.policy(torch.Tensor(state).view(-1,self.config['state_dim']).to(self.device))
         if test:
             return mean.squeeze().cpu().numpy()
         else:
@@ -237,6 +240,7 @@ class DARA(object):
             
         v = self.v_func(state_batch)
         adv = q_t - v
+
         if writer is not None and self.total_it % 5000 == 0:
             writer.add_scalar('train/adv', adv.mean(), self.total_it)
             writer.add_scalar('train/value', v.mean(), self.total_it)
@@ -255,12 +259,16 @@ class DARA(object):
         return loss
 
     def update_policy(self, advantage_batch, state_batch, action_batch):
+        # advantage_batch = advantage_batch/advantage_batch.abs().mean()
         exp_adv = torch.exp(self.temp * advantage_batch.detach()).clamp(max=100.0)
         bc_loss = self.policy.bc_loss(state_batch, action_batch)
+
+        # if self.total_it% 500 == 0:
+        #     print('exp',exp_adv.mean(), exp_adv.min(), exp_adv.max())
         policy_loss = torch.mean(exp_adv * bc_loss)
         return policy_loss
 
-    def train(self, src_replay_buffer, tar_replay_buffer, batch_size=128, writer=None):
+    def train(self, src_replay_buffer, tar_replay_buffer, batch_size=128, writer=None, wandb = None):
 
         self.total_it += 1
         
@@ -271,7 +279,8 @@ class DARA(object):
 
         # we do reward modification
         with torch.no_grad():
-            sas_probs, sa_probs = self.classifier(src_state, src_action, src_next_state, with_noise=False)
+            sas_logits, sa_logits = self.classifier(src_state, src_action, src_next_state, with_noise=False)
+            sas_probs, sa_probs = F.softmax(sas_logits, -1), F.softmax(sa_logits, -1)
             sas_log_probs, sa_log_probs = torch.log(sas_probs + 1e-10), torch.log(sa_probs + 1e-10)
             reward_penalty = sas_log_probs[:, 1:] - sa_log_probs[:, 1:] - sas_log_probs[:, :1] + sa_log_probs[:,:1]
             # clip the panlty based on the DARA paper

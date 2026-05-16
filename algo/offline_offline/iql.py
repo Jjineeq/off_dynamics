@@ -159,7 +159,11 @@ class IQL(object):
     
     def select_action(self, state, test=True):
         with torch.no_grad():
-            action, _, mean = self.policy(torch.Tensor(state).view(1,-1).to(self.device))
+            state = torch.Tensor(state).to(self.device)
+            if state.dim() == 1:
+                state = state.view(1, -1)
+
+            action, _, mean = self.policy(state)
         if test:
             return mean.squeeze().cpu().numpy()
         else:
@@ -201,7 +205,7 @@ class IQL(object):
         policy_loss = torch.mean(exp_adv * bc_loss)
         return policy_loss
 
-    def train(self, src_replay_buffer, tar_replay_buffer, batch_size=128, writer=None):
+    def train(self, src_replay_buffer, tar_replay_buffer, batch_size=128, writer=None, wandbrun = None):
 
         self.total_it += 1
 

@@ -25,9 +25,11 @@ requests==2.28.1
 -e git+https://github.com/TianhongDai/reinforcement-learning-algorithms.git@88ff69c082cba9305275a0082794d4b467ac823f#egg=rl_utils
 scipy==1.4.1
 seaborn==0.12.2
-tensorboard==2.7.0
-tensorboardX==2.5.1
+
 tqdm==4.64.0
 urllib3==1.26.12
 virtualenv==20.16.3
 wandb==0.13.2
+
+tensorboard
+tensorboardX

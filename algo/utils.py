@@ -16,11 +16,16 @@ class ReplayBuffer(object):
         self.ptr = 0
         self.size = 0
 
-        self.state = np.zeros((max_size, state_dim))
-        self.action = np.zeros((max_size, action_dim))
-        self.next_state = np.zeros((max_size, state_dim))
-        self.reward = np.zeros((max_size, 1))
-        self.not_done = np.zeros((max_size, 1))
+        self.state = torch.zeros((max_size, state_dim))
+        self.action = torch.zeros((max_size, action_dim))
+        self.next_state = torch.zeros((max_size, state_dim))
+        self.reward = torch.zeros((max_size, 1))
+        self.not_done = torch.zeros((max_size, 1))
+
+
+        self.next_state_samples = torch.zeros((7,max_size, state_dim))
+
+        self.mobile = 0
 
         self.device = device
 
@@ -33,26 +38,286 @@ class ReplayBuffer(object):
 
         self.ptr = (self.ptr + 1) % self.max_size
         self.size = min(self.size + 1, self.max_size)
+        # print(self.size)
+
+    def add_batch(self, batch):
+        if batch is None:
+            return 
+        # s = batch["obss"].pin_memory()
+        # ns = batch["next_obss"].pin_memory()
+        # a = batch["actions"].pin_memory()
+        # r = batch["rewards"].pin_memory()
+        # d = batch["terminals"].pin_memory()
+
+        s = batch["obss"]
+        ns = batch["next_obss"]
+        a = batch["actions"]
+        r = batch["rewards"]
+        d = batch["terminals"]
+
+
+
+        # print(d)
+
+        # print(s.shape)
+        # print(s[:  min(self.ptr + len(s), self.max_size) - self.ptr].shape)
+        # print(self.state.shape)
+        # print(self.state[self.ptr:min(self.ptr + len(s), self.max_size)].shape )
+
+        
+        self.state[self.ptr:min(self.ptr + len(s), self.max_size)] = s[:  min(self.ptr + len(s), self.max_size) - self.ptr]
+        self.action[self.ptr:min(self.ptr + len(s), self.max_size)] = a[:  min(self.ptr + len(s), self.max_size) - self.ptr]
+        self.next_state[self.ptr:min(self.ptr + len(s), self.max_size)] = ns[:  min(self.ptr + len(s), self.max_size) - self.ptr]
+        self.reward[self.ptr:min(self.ptr + len(s), self.max_size)] = r[:  min(self.ptr + len(s), self.max_size) - self.ptr]
+        self.not_done[self.ptr:min(self.ptr + len(s), self.max_size)] = 1. - d[:  min(self.ptr + len(s), self.max_size) - self.ptr]
+
+
+
+
+
+        used = min(self.ptr + len(s), self.max_size) - self.ptr
+
+        self.ptr = (min(self.ptr + len(s), self.max_size)) % self.max_size
+        
+        self.size = min(self.size + used, self.max_size)
+
+        if self.ptr == 0:
+            self.state[0:len(s) - used] = s[used:]
+            self.action[0:len(s) - used] = a[used:]
+            self.next_state[0:len(s) - used] = ns[used:]
+            self.reward[0:len(s) - used] = r[used:]
+            self.not_done[0:len(s) - used] = 1. - d[used:]
+
+
+            self.ptr = len(s) - used
+        
+    def add_batch_sep(self, s, a, ns, r, d):
+        # s = batch["obss"]
+        # ns = batch["next_obss"]
+        # a = batch["actions"]
+        # r = batch["rewards"]
+        # d = batch["terminals"]
+
+        
+        self.state[self.ptr:min(self.ptr + len(s), self.max_size)] = s[:  min(self.ptr + len(s), self.max_size) - self.ptr]
+        self.action[self.ptr:min(self.ptr + len(s), self.max_size)] = a[:  min(self.ptr + len(s), self.max_size) - self.ptr]
+        self.next_state[self.ptr:min(self.ptr + len(s), self.max_size)] = ns[:  min(self.ptr + len(s), self.max_size) - self.ptr]
+        self.reward[self.ptr:min(self.ptr + len(s), self.max_size)] = r[:  min(self.ptr + len(s), self.max_size) - self.ptr]
+        self.not_done[self.ptr:min(self.ptr + len(s), self.max_size)] = 1. - d[:  min(self.ptr + len(s), self.max_size) - self.ptr]
+
+        used = min(self.ptr + len(s), self.max_size) - self.ptr
+
+        self.ptr = (min(self.ptr + len(s), self.max_size)) % self.max_size
+        
+        self.size = min(self.size + used, self.max_size)
+        
+
+        if self.ptr == 0:
+            self.state[0:len(s) - used] = s[used:]
+            self.action[0:len(s) - used] = a[used:]
+            self.next_state[0:len(s) - used] = ns[used:]
+            self.reward[0:len(s) - used] = r[used:]
+            self.not_done[0:len(s) - used] = 1. - d[used:]
+
+            self.ptr = len(s) - used
+
+        
 
 
     def sample(self, batch_size):
         ind = np.random.randint(0, self.size, size=batch_size)
 
-        return (
-            torch.FloatTensor(self.state[ind]).to(self.device),
-            torch.FloatTensor(self.action[ind]).to(self.device),
-            torch.FloatTensor(self.next_state[ind]).to(self.device),
-            torch.FloatTensor(self.reward[ind]).to(self.device),
-            torch.FloatTensor(self.not_done[ind]).to(self.device)
+        if self.mobile == 1:
+            return (
+            torch.FloatTensor(self.state[ind]).to(self.device,non_blocking=True),
+            torch.FloatTensor(self.action[ind]).to(self.device,non_blocking=True),
+            torch.FloatTensor(self.next_state[ind]).to(self.device,non_blocking=True),
+            torch.FloatTensor(self.reward[ind]).to(self.device,non_blocking=True),
+            torch.FloatTensor(self.not_done[ind]).to(self.device,non_blocking=True),
+            torch.FloatTensor(self.next_state_samples[:,ind]).to(self.device,non_blocking=True),
         )
+
+        else:
+
+            return (
+                torch.FloatTensor(self.state[ind]).to(self.device,non_blocking=True),
+                torch.FloatTensor(self.action[ind]).to(self.device,non_blocking=True),
+                torch.FloatTensor(self.next_state[ind]).to(self.device,non_blocking=True),
+                torch.FloatTensor(self.reward[ind]).to(self.device,non_blocking=True),
+                torch.FloatTensor(self.not_done[ind]).to(self.device,non_blocking=True),
+            )
     
+    def sample_all(self, cuda = True):
+        ind = np.arange(0, self.size)
+        if cuda:
+            return (
+                torch.FloatTensor(self.state[ind]).to(self.device, non_blocking=True),
+                torch.FloatTensor(self.action[ind]).to(self.device, non_blocking=True),
+                torch.FloatTensor(self.next_state[ind]).to(self.device, non_blocking=True),
+                torch.FloatTensor(self.reward[ind]).to(self.device, non_blocking=True),
+                torch.FloatTensor(self.not_done[ind]).to(self.device, non_blocking=True),
+            )
+        else:
+            return (
+                torch.FloatTensor(self.state[ind]),
+                torch.FloatTensor(self.action[ind]),
+                torch.FloatTensor(self.next_state[ind]),
+                torch.FloatTensor(self.reward[ind]),
+                torch.FloatTensor(self.not_done[ind]),
+            )
+
+       
+
+
+        
     def convert_D4RL(self, dataset):
         self.state = dataset['observations']
+        # self.state = torch.FloatTensor(self.state).pin_memory()
+        self.state = torch.FloatTensor(self.state)
+
         self.action = dataset['actions']
+        # self.action = torch.FloatTensor(self.action).pin_memory()
+        # self.action = torch.FloatTensor(self.action)
+
         self.next_state = dataset['next_observations']
+        # self.next_state = torch.FloatTensor(self.next_state).pin_memory()
+        self.next_state = torch.FloatTensor(self.next_state)
+
         self.reward = dataset['rewards'].reshape(-1,1)
+        # self.reward = torch.FloatTensor(self.reward).pin_memory()
+        self.reward = torch.FloatTensor(self.reward)
+
         self.not_done = 1. - dataset['terminals'].reshape(-1,1)
+        # self.not_done = torch.FloatTensor(self.not_done).pin_memory()
+        self.not_done = torch.FloatTensor(self.not_done)
         self.size = self.state.shape[0]
+
+
+# class ReplayBuffer(object):
+#     def __init__(self, state_dim, action_dim, device, max_size=int(1e6)):
+#         self.max_size = max_size
+#         self.ptr = 0
+#         self.size = 0
+
+#         self.state = torch.zeros((max_size, state_dim)).to(device)
+#         self.action = torch.zeros((max_size, action_dim)).to(device)
+#         self.next_state = torch.zeros((max_size, state_dim)).to(device)
+#         self.reward = torch.zeros((max_size, 1)).to(device)
+#         self.not_done = torch.zeros((max_size, 1)).to(device)
+
+#         self.device = device
+
+#     def add(self, state, action, next_state, reward, done):
+
+
+#         state = torch.FloatTensor(state).to(self.device)
+
+#         action = torch.FloatTensor(action).to(self.device)
+#         next_state = torch.FloatTensor(next_state).to(self.device)
+#         # print(reward)
+#         reward = torch.FloatTensor([reward]).to(self.device)
+#         done = torch.FloatTensor([done]).to(self.device)
+        
+#         self.state[self.ptr] = state
+#         self.action[self.ptr] = action
+#         self.next_state[self.ptr] = next_state
+#         self.reward[self.ptr] = reward
+#         self.not_done[self.ptr] = 1. - done
+
+#         self.ptr = (self.ptr + 1) % self.max_size
+#         self.size = min(self.size + 1, self.max_size)
+#         # print(self.size)
+
+#     def add_batch(self, batch):
+#         s = batch["obss"]
+#         ns = batch["next_obss"]
+#         a = batch["actions"]
+#         r = batch["rewards"]
+#         d = batch["terminals"]
+
+        
+#         self.state[self.ptr:min(self.ptr + len(s), self.max_size)] = s[:  min(self.ptr + len(s), self.max_size) - self.ptr]
+#         self.action[self.ptr:min(self.ptr + len(s), self.max_size)] = a[:  min(self.ptr + len(s), self.max_size) - self.ptr]
+#         self.next_state[self.ptr:min(self.ptr + len(s), self.max_size)] = ns[:  min(self.ptr + len(s), self.max_size) - self.ptr]
+#         self.reward[self.ptr:min(self.ptr + len(s), self.max_size)] = r[:  min(self.ptr + len(s), self.max_size) - self.ptr]
+#         self.not_done[self.ptr:min(self.ptr + len(s), self.max_size)] = 1. - d[:  min(self.ptr + len(s), self.max_size) - self.ptr]
+
+#         used = min(self.ptr + len(s), self.max_size) - self.ptr
+
+#         self.ptr = (min(self.ptr + len(s), self.max_size)) % self.max_size
+        
+#         self.size = min(self.size + used, self.max_size)
+
+#         if self.ptr == 0:
+#             self.state[0:len(s) - used] = s[used:]
+#             self.action[0:len(s) - used] = a[used:]
+#             self.next_state[0:len(s) - used] = ns[used:]
+#             self.reward[0:len(s) - used] = r[used:]
+#             self.not_done[0:len(s) - used] = 1. - d[used:]
+
+#             self.ptr = len(s) - used
+        
+#     def add_batch_sep(self, s, a, ns, r, d):
+#         # s = batch["obss"]
+#         # ns = batch["next_obss"]
+#         # a = batch["actions"]
+#         # r = batch["rewards"]
+#         # d = batch["terminals"]
+
+#         s = torch.FloatTensor(s).to(self.device)
+
+#         a = torch.FloatTensor(a).to(self.device)
+#         ns = torch.FloatTensor(ns).to(self.device)
+#         r = torch.FloatTensor(r).to(self.device)
+#         d = torch.FloatTensor(d).to(self.device)
+        
+        
+
+        
+#         self.state[self.ptr:min(self.ptr + len(s), self.max_size)] = s[:  min(self.ptr + len(s), self.max_size) - self.ptr]
+#         self.action[self.ptr:min(self.ptr + len(s), self.max_size)] = a[:  min(self.ptr + len(s), self.max_size) - self.ptr]
+#         self.next_state[self.ptr:min(self.ptr + len(s), self.max_size)] = ns[:  min(self.ptr + len(s), self.max_size) - self.ptr]
+#         self.reward[self.ptr:min(self.ptr + len(s), self.max_size)] = r[:  min(self.ptr + len(s), self.max_size) - self.ptr]
+#         self.not_done[self.ptr:min(self.ptr + len(s), self.max_size)] = 1. - d[:  min(self.ptr + len(s), self.max_size) - self.ptr]
+
+#         used = min(self.ptr + len(s), self.max_size) - self.ptr
+
+#         self.ptr = (min(self.ptr + len(s), self.max_size)) % self.max_size
+        
+#         self.size = min(self.size + used, self.max_size)
+        
+
+#         if self.ptr == 0:
+#             self.state[0:len(s) - used] = s[used:]
+#             self.action[0:len(s) - used] = a[used:]
+#             self.next_state[0:len(s) - used] = ns[used:]
+#             self.reward[0:len(s) - used] = r[used:]
+#             self.not_done[0:len(s) - used] = 1. - d[used:]
+
+#             self.ptr = len(s) - used
+
+        
+
+
+#     def sample(self, batch_size):
+#         # ind = torch.randint(0, self.size, size=batch_size)
+#         ind = torch.randint(0, self.size, size=(batch_size,))
+
+
+#         return (
+#             self.state[ind],
+#             self.action[ind],
+#             self.next_state[ind],
+#             self.reward[ind],
+#             self.not_done[ind])
+    
+#     def convert_D4RL(self, dataset):
+#         self.state = dataset['observations']
+#         self.action = dataset['actions']
+#         self.next_state = dataset['next_observations']
+#         self.reward = dataset['rewards'].reshape(-1,1)
+#         self.not_done = 1. - dataset['terminals'].reshape(-1,1)
+#         self.size = self.state.shape[0]
         
 
 class MLP(nn.Module):
@@ -244,3 +509,100 @@ class ParallelizedEnsembleFlattenMLP(nn.Module):
         preds_sample = preds[sample_idxs]
         
         return torch.min(preds_sample, dim=0)[0], sample_idxs
+    
+
+import os
+import numpy as np
+import torch
+import torch.nn as nn
+
+import numpy as np
+import os.path as path
+import torch
+
+
+class StandardScaler(object):
+    def __init__(self, mu=None, std=None):
+        self.mu = mu
+        self.std = std
+
+    def fit(self, data):
+        """Runs two ops, one for assigning the mean of the data to the internal mean, and
+        another for assigning the standard deviation of the data to the internal standard deviation.
+        This function must be called within a 'with <session>.as_default()' block.
+
+        Arguments:
+        data (np.ndarray): A numpy array containing the input
+
+        Returns: None.
+        """
+        
+        self.mu = torch.mean(data, axis=0, keepdims=True)
+        self.std = torch.mean(data, axis=0, keepdims=True)
+        self.std[self.std < 1e-12] = 1.0
+
+        print('scaler is not fit')
+
+        self.mu = torch.zeros(self.mu.shape).to('cuda')
+
+        self.std = torch.ones(self.std.shape).to('cuda')
+
+    def transform(self, data):
+        """Transforms the input matrix data using the parameters of this scaler.
+
+        Arguments:
+        data (np.array): A numpy array containing the points to be transformed.
+
+        Returns: (np.array) The transformed dataset.
+        """
+        return (data - self.mu) / self.std
+        # return data
+
+    def inverse_transform(self, data):
+        """Undoes the transformation performed by this scaler.
+
+        Arguments:
+        data (np.array): A numpy array containing the points to be transformed.
+
+        Returns: (np.array) The transformed dataset.
+        """
+        return self.std * data + self.mu
+        # return data
+    
+    def save_scaler(self, save_path):
+        mu_path = path.join(save_path, "mu.npy")
+        std_path = path.join(save_path, "std.npy")
+
+        try:
+            np.save(mu_path, self.mu)
+            np.save(std_path, self.std)
+        except:
+            np.save(mu_path, self.mu.cpu().numpy())
+            np.save(std_path, self.std.cpu().numpy())
+        
+    def load_scaler(self, load_path):
+        mu_path = path.join(load_path, "mu.npy")
+        std_path = path.join(load_path, "std.npy")
+        self.mu = np.load(mu_path,allow_pickle=True)
+        self.std = np.load(std_path,allow_pickle=True)
+
+        print(self.mu)
+        print(type(self.mu), self.mu.dtype)
+
+        self.mu = self.mu.astype(float)
+        self.std = self.std.astype(float)
+
+        print(self.mu)
+        print(type(self.mu), self.mu.dtype)
+
+        self.mu = torch.FloatTensor(self.mu).to('cuda')
+        self.std = torch.FloatTensor(self.std).to('cuda')
+
+
+        self.mu = 0
+        self.std = 1
+    def transform_tensor(self, data: torch.Tensor):
+        device = data.device
+        data = self.transform(data)
+        # data = torch.tensor(data, device=device)
+        return data
