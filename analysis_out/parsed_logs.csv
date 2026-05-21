@@ -1,226 +1,1001 @@
 log_file,status,n_lines,policy,env,seed,shift_level,src_eval_return,trg_eval_return,eval_return,normalized_score,loss,error_keywords,tail
-logs/DARA_halfcheetah-friction_shift2.0_seed1.log,error,4045,DARA,halfcheetah-friction,1,2.0,,,,,,Error:,"evaluate time 1.551448106765747
-train + evaluate 6.45948052406311
-[996] Evaluation on source over 10 episodes: 5282.342157186818
-[996] Evaluation on target over 10 episodes: 5125.500518943137
-evaluate time 1.5270028114318848
-train + evaluate 6.430288791656494
-[997] Evaluation on source over 10 episodes: 5264.631260919584
-[997] Evaluation on target over 10 episodes: 5407.664172781716
-evaluate time 1.5243465900421143
-train + evaluate 6.312869548797607
-[998] Evaluation on source over 10 episodes: 5363.742740198842
-[998] Evaluation on target over 10 episodes: 5424.652860937255
-evaluate time 1.5319242477416992
-train + evaluate 6.469936847686768
-[999] Evaluation on source over 10 episodes: 5327.804959187688
-[999] Evaluation on target over 10 episodes: 4770.8808946898835
-evaluate time 1.531508207321167
-train + evaluate 6.527973890304565
-[1000] Evaluation on source over 10 episodes: 5300.183452589767
-[1000] Evaluation on target over 10 episodes: 5292.214827443444
-evaluate time 1.5313889980316162
-train + evaluate 6.363470077514648
-[1;34mwandb[0m: 
-[1;34mwandb[0m: 🚀 View run [33mhalfcheetah-friction2.0mediummedium[0m at: [34mhttps://wandb.ai/jjineeq/mobody/runs/00mu3l8j[0m
-[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20260502_155851-00mu3l8j/logs[0m"
-logs/DARA_hopper-friction_shift2.0_seed1.log,error,4044,DARA,hopper-friction,1,2.0,,,,,,Error:,"evaluate time 3.76981258392334
-train + evaluate 17.66815495491028
-[996] Evaluation on source over 10 episodes: 1520.7447862626882
-[996] Evaluation on target over 10 episodes: 305.41541222447864
-evaluate time 2.901893138885498
-train + evaluate 17.41087508201599
-[997] Evaluation on source over 10 episodes: 1379.0599286040979
-[997] Evaluation on target over 10 episodes: 305.6779605807596
-evaluate time 2.0839972496032715
-train + evaluate 16.506290435791016
-[998] Evaluation on source over 10 episodes: 1394.8249530734931
-[998] Evaluation on target over 10 episodes: 304.9958015451373
-evaluate time 2.0771119594573975
-train + evaluate 16.36105728149414
-[999] Evaluation on source over 10 episodes: 1444.6213868345617
-[999] Evaluation on target over 10 episodes: 304.69274579993885
-evaluate time 2.311671495437622
-train + evaluate 16.49189591407776
-[1000] Evaluation on source over 10 episodes: 1512.1361906445968
-[1000] Evaluation on target over 10 episodes: 305.0245965884612
-evaluate time 3.439588785171509
-train + evaluate 17.80305504798889
-[1;34mwandb[0m: 
-[1;34mwandb[0m: 🚀 View run [33mhopper-friction2.0mediummedium[0m at: [34mhttps://wandb.ai/jjineeq/mobody/runs/mri1zle4[0m
-[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20260502_034636-mri1zle4/logs[0m"
-logs/DARA_walker2d-friction_shift2.0_seed1.log,error,4045,DARA,walker2d-friction,1,2.0,,,,,,Error:,"evaluate time 5.909470796585083
-train + evaluate 22.128517627716064
-[996] Evaluation on source over 10 episodes: 3016.325938512252
-[996] Evaluation on target over 10 episodes: 3407.7700672811925
-evaluate time 6.052124500274658
-train + evaluate 22.35749578475952
-[997] Evaluation on source over 10 episodes: 2935.3963944769775
-[997] Evaluation on target over 10 episodes: 3340.698720499985
-evaluate time 5.967575311660767
-train + evaluate 21.748448610305786
-[998] Evaluation on source over 10 episodes: 3076.747789239541
-[998] Evaluation on target over 10 episodes: 3172.2862055926244
-evaluate time 6.107222318649292
-train + evaluate 21.940765380859375
-[999] Evaluation on source over 10 episodes: 3052.6764489049674
-[999] Evaluation on target over 10 episodes: 3459.685542077579
-evaluate time 6.104096412658691
-train + evaluate 22.340025424957275
-[1000] Evaluation on source over 10 episodes: 2942.5497501101468
-[1000] Evaluation on target over 10 episodes: 3093.14859688011
-evaluate time 5.941867351531982
-train + evaluate 21.766974449157715
-[1;34mwandb[0m: 
-[1;34mwandb[0m: 🚀 View run [33mwalker2d-friction2.0mediummedium[0m at: [34mhttps://wandb.ai/jjineeq/mobody/runs/p8d5tomq[0m
-[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20260501_102355-p8d5tomq/logs[0m"
-logs/IQL_halfcheetah-friction_shift2.0_seed1.log,error,4043,IQL,halfcheetah-friction,1,2.0,,,,,,Error:,"evaluate time 4.244049072265625
-train + evaluate 10.986992835998535
-[996] Evaluation on source over 10 episodes: 5266.202835212542
-[996] Evaluation on target over 10 episodes: 5190.16931196327
-evaluate time 4.341470003128052
-train + evaluate 11.299417734146118
-[997] Evaluation on source over 10 episodes: 5294.156294230595
-[997] Evaluation on target over 10 episodes: 5242.727733156041
-evaluate time 4.496859073638916
-train + evaluate 11.470114707946777
-[998] Evaluation on source over 10 episodes: 5326.722380927361
-[998] Evaluation on target over 10 episodes: 5280.05587327302
-evaluate time 4.216149806976318
-train + evaluate 11.074437856674194
-[999] Evaluation on source over 10 episodes: 5269.762141675096
-[999] Evaluation on target over 10 episodes: 5343.433822011267
-evaluate time 3.8750274181365967
-train + evaluate 10.759387493133545
-[1000] Evaluation on source over 10 episodes: 5259.012794875636
-[1000] Evaluation on target over 10 episodes: 5334.846438583992
-evaluate time 4.4062559604644775
-train + evaluate 11.491620302200317
-[1;34mwandb[0m: 
-[1;34mwandb[0m: 🚀 View run [33mhalfcheetah-friction2.0mediummedium[0m at: [34mhttps://wandb.ai/jjineeq/mobody/runs/oyj1q2rr[0m
-[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20260502_125254-oyj1q2rr/logs[0m"
-logs/IQL_hopper-friction_shift2.0_seed1.log,error,4043,IQL,hopper-friction,1,2.0,,,,,,Error:,"evaluate time 2.3015434741973877
-train + evaluate 12.474919080734253
-[996] Evaluation on source over 10 episodes: 1765.9379691168328
-[996] Evaluation on target over 10 episodes: 301.72673189143654
-evaluate time 2.3659632205963135
-train + evaluate 12.417348861694336
-[997] Evaluation on source over 10 episodes: 1641.3915730407684
-[997] Evaluation on target over 10 episodes: 300.933491830321
-evaluate time 2.1332223415374756
-train + evaluate 11.86446499824524
-[998] Evaluation on source over 10 episodes: 1700.5800698784428
-[998] Evaluation on target over 10 episodes: 300.70241938095864
-evaluate time 2.620392322540283
-train + evaluate 12.559696435928345
-[999] Evaluation on source over 10 episodes: 1717.960247984975
-[999] Evaluation on target over 10 episodes: 300.91253469321066
-evaluate time 2.2588932514190674
-train + evaluate 11.714332580566406
-[1000] Evaluation on source over 10 episodes: 1955.9820526941544
-[1000] Evaluation on target over 10 episodes: 301.70240718545926
-evaluate time 2.9899539947509766
-train + evaluate 12.76322317123413
-[1;34mwandb[0m: 
-[1;34mwandb[0m: 🚀 View run [33mhopper-friction2.0mediummedium[0m at: [34mhttps://wandb.ai/jjineeq/mobody/runs/sz6qyshd[0m
-[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20260502_002225-sz6qyshd/logs[0m"
-logs/IQL_walker2d-friction_shift2.0_seed1.log,error,4043,IQL,walker2d-friction,1,2.0,,,,,,Error:,"evaluate time 5.517483711242676
-train + evaluate 15.87393307685852
-[996] Evaluation on source over 10 episodes: 3121.9142105352953
-[996] Evaluation on target over 10 episodes: 2225.271735758315
-evaluate time 5.944106817245483
-train + evaluate 16.097492694854736
-[997] Evaluation on source over 10 episodes: 2776.0832931149853
-[997] Evaluation on target over 10 episodes: 2014.6146090756476
-evaluate time 6.126706838607788
-train + evaluate 16.349802255630493
-[998] Evaluation on source over 10 episodes: 3201.869637924369
-[998] Evaluation on target over 10 episodes: 1916.338237222812
-evaluate time 6.038909912109375
-train + evaluate 16.217835187911987
-[999] Evaluation on source over 10 episodes: 3029.129394084287
-[999] Evaluation on target over 10 episodes: 1656.3952575135013
-evaluate time 5.665694236755371
-train + evaluate 15.991745948791504
-[1000] Evaluation on source over 10 episodes: 2794.5013609047246
-[1000] Evaluation on target over 10 episodes: 1975.989881421979
-evaluate time 5.899932146072388
-train + evaluate 16.47574782371521
-[1;34mwandb[0m: 
-[1;34mwandb[0m: 🚀 View run [33mwalker2d-friction2.0mediummedium[0m at: [34mhttps://wandb.ai/jjineeq/mobody/runs/eldyfble[0m
-[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20260501_063215-eldyfble/logs[0m"
-logs/MOBODY_halfcheetah-friction_shift2.0_seed1.log,error,18587,MOBODY,halfcheetah-friction,1,2.0,,,,,0.2272130250930786,Error:,"reward mse 0.03317079320549965
-obs mse 5.8968825340271
-[999] Evaluation on target over 10 episodes: 4843.607215067689
-evaluate time 1.259084701538086
-train + evaluate 5.034142971038818
-tensor(28.4739, device='cuda:0') tensor(0.4466, device='cuda:0') tensor(57.7811, device='cuda:0')
-[1000] Evaluation on source over 10 episodes: 4932.42374768397
-true reward         tensor([ 3.0275,  4.9434,  4.2049,  3.4059,  4.8767, -0.0638,  3.7021, -0.0636],
+logs/DARA_halfcheetah-friction_shift0.1_seed1.log,error,4080,DARA,halfcheetah-friction,1,0.1,,,,,,Error:,"wandb: | 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: / 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: - 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: \ 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: | 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: / 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                  test/source return ▂▇█▅▇▃▆▅▅▅▄▃▅▆▄▃▃▃▃▄▂▄▃▅▄▃▇▁▄▄▅▃▅▆▅▃▄▄▅▄
+wandb:        test/target normalized score ▃▁▂▃▃▄▁▁▄▃▅█▂▄▄▃▅▆▆▅▇▅▄▅▅▄▄▆▄▆▅▃▇▄▃▇▃▄▆▇
+wandb:                  test/target return ▃▁▂▃▃▄▁▁▄▃▅█▂▄▄▃▅▆▆▅▇▅▄▅▅▄▄▆▄▆▅▃▇▄▃▇▃▄▆▇
+wandb: test/target smooth normalized score ▅▃▁▃▁▃▂▁▃▂▃▆▄▅▄▄▅▆▅▆▅▅▅▅▅▅▅▇▆▆▆▆▆▅▄█▆▆▅▇
+wandb:           test/target smooth return ▅▃▁▃▁▃▂▁▃▂▃▆▄▅▄▄▅▆▅▆▅▅▅▅▅▅▅▇▆▆▆▆▆▅▄█▆▆▅▇
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 2971.29362
+wandb:        test/target normalized score 34.84826
+wandb:                  test/target return 14347.97909
+wandb: test/target smooth normalized score 34.57162
+wandb:           test/target smooth return 14231.85634
+wandb: 
+wandb: Synced halfcheetah-friction0.1mediummedium: https://wandb.ai/jjineeq/mobody/runs/b3mvg50e
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260504_024104-b3mvg50e/logs"
+logs/DARA_halfcheetah-friction_shift0.5_seed1.log,error,4078,DARA,halfcheetah-friction,1,0.5,,,,,,Error:,"wandb: | 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: / 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: - 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: \ 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: | 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: / 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                  test/source return ▁▄▅▇▆▆▅▆▆▅▇▇▆▇█▇█▇▇██▇▇███▆████▇█▇█▇████
+wandb:        test/target normalized score ▁▅▄▆▆▄▅▆▆▄▆▆▅▅▅▆▇▅▇▆▇▆▆██▇██▇▇▇█▇███████
+wandb:                  test/target return ▁▅▄▆▆▄▅▆▆▄▆▆▅▅▅▆▇▅▇▆▇▆▆██▇██▇▇▇█▇███████
+wandb: test/target smooth normalized score ▁▅▅▆▆▅▇▆▆▅▆▆▆▆▅▆▆▅▇▆▇▇▇█▇▇██▇███████████
+wandb:           test/target smooth return ▁▅▅▆▆▅▇▆▆▅▆▆▆▆▅▆▆▅▇▆▇▇▇█▇▇██▇███████████
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 5032.36073
+wandb:        test/target normalized score 65.38268
+wandb:                  test/target return 4713.25963
+wandb: test/target smooth normalized score 65.96903
+wandb:           test/target smooth return 4758.04124
+wandb: 
+wandb: Synced halfcheetah-friction0.5mediummedium: https://wandb.ai/jjineeq/mobody/runs/f5rinwxg
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260504_213930-f5rinwxg/logs"
+logs/DARA_halfcheetah-friction_shift2.0_seed1.log,error,4077,DARA,halfcheetah-friction,1,2.0,,,,,,Error:,"wandb: / 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: - 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: \ 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: | 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: / 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: - 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                  test/source return ▁▅▇▇▇▇▇▇▇▆▇█▇▇▇▇████████████████████████
+wandb:        test/target normalized score ▁▅▆▇▇▇▇▇▇▅▇▇▇█▇▇█▇▇▇███▇▇▇█▇█▇█████▇▇██▇
+wandb:                  test/target return ▁▅▆▇▇▇▇▇▇▅▇▇▇█▇▇█▇▇▇███▇▇▇█▇█▇█████▇▇██▇
+wandb: test/target smooth normalized score ▁▅▆▆▆▇▇▇▇▆▇▇▇▇▇▇█▇▇██▇██████████████████
+wandb:           test/target smooth return ▁▅▆▆▆▇▇▇▇▆▇▇▇▇▇▇█▇▇██▇██████████████████
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 5300.18345
+wandb:        test/target normalized score 48.30377
+wandb:                  test/target return 5292.21483
+wandb: test/target smooth normalized score 47.54067
+wandb:           test/target smooth return 5204.18265
+wandb: 
+wandb: Synced halfcheetah-friction2.0mediummedium: https://wandb.ai/jjineeq/mobody/runs/ys8enp71
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260507_154030-ys8enp71/logs"
+logs/DARA_halfcheetah-friction_shift5.0_seed1.log,error,4080,DARA,halfcheetah-friction,1,5.0,,,,,,Error:,"wandb: | 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: / 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: - 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: \ 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: | 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: / 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                  test/source return ▁▇▇▆█▇▇████████▇█▇██████████████████████
+wandb:        test/target normalized score ▁▅█▇▆▇█▆██▆▇▆▇▅▇▆▆▆▇▆▆▆▅▄▆▅▄▅▅▆▆▄▃▆▆▄▅▅▅
+wandb:                  test/target return ▁▅█▇▆▇█▆██▆▇▆▇▅▇▆▆▆▇▆▆▆▅▄▆▅▄▅▅▆▆▄▃▆▆▄▅▅▅
+wandb: test/target smooth normalized score ▁▅██▇█▇███▇▇▇▇▇█▇▇▆▇▆▆▆▆▆▆▆▅▅▅▅▆▅▄▆▆▅▅▅▆
+wandb:           test/target smooth return ▁▅██▇█▇███▇▇▇▇▇█▇▇▆▇▆▆▆▆▆▆▆▅▅▅▅▆▅▄▆▆▅▅▅▆
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 5154.38187
+wandb:        test/target normalized score 36.16464
+wandb:                  test/target return 3509.6967
+wandb: test/target smooth normalized score 41.92825
+wandb:           test/target smooth return 4113.69506
+wandb: 
+wandb: Synced halfcheetah-friction5.0mediummedium: https://wandb.ai/jjineeq/mobody/runs/0gnfxmk1
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260508_093840-0gnfxmk1/logs"
+logs/DARA_hopper-friction_shift0.1_seed1.log,error,4076,DARA,hopper-friction,1,0.1,,,,,,Error:,"wandb: / 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: - 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: \ 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: | 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: / 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: - 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                  test/source return ▁▇▇▁▆▁▇▇▆▅█▆▅▇█▆▇▅▆▇▆▇▇▆▆▇▇▇▇█▇▆▆▇▇▇▇▆▆▇
+wandb:        test/target normalized score ▁▄▅▁▄▃▅▄▅▄▇▆▆▄▅▅▅▅█▆▄▅▅▅▅▆▆▅▄▅▅▄▅▆▅▅▅▅▅▅
+wandb:                  test/target return ▁▄▅▁▄▃▅▄▅▄▇▆▆▄▅▅▅▅█▆▄▅▅▅▅▆▆▅▄▅▅▄▅▆▅▅▅▅▅▅
+wandb: test/target smooth normalized score ▁▇▆▆▃▅█▇▅▆▇▇▇▆▇▆▇▇█▆▇▇█▆▆██▇▆▇▇▇▇█▇▇▆▇▆▇
+wandb:           test/target smooth return ▁▇▆▆▃▅█▇▅▆▇▇▇▆▇▆▇▇█▆▇▇█▆▆██▇▆▇▇▇▇█▇▇▆▇▆▇
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 1528.61582
+wandb:        test/target normalized score 24.28494
+wandb:                  test/target return 765.50733
+wandb: test/target smooth normalized score 24.90916
+wandb:           test/target smooth return 785.86095
+wandb: 
+wandb: Synced hopper-friction0.1mediummedium: https://wandb.ai/jjineeq/mobody/runs/douf88w8
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260503_204913-douf88w8/logs"
+logs/DARA_hopper-friction_shift0.5_seed1.log,error,4080,DARA,hopper-friction,1,0.5,,,,,,Error:,"wandb: \ 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: | 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: / 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: - 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: \ 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: | 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                  test/source return ▁▆▇▃▅▄█▅▅▄▆▆▇▆▅▄▅▅▅▆▅▆▆▅▅▅▅▆▅▆▅▅▅▅▅▅▆▅▆▇
+wandb:        test/target normalized score ▁▇▇▅▄▅▇▇▇▅▆▇█▆▆▆▆▆▅██▆▆▅▇▇▆▇█▇▆▅▅▆▆▆▅▆▅▆
+wandb:                  test/target return ▁▇▇▅▄▅▇▇▇▅▆▇█▆▆▆▆▆▅██▆▆▅▇▇▆▇█▇▆▅▅▆▆▆▅▆▅▆
+wandb: test/target smooth normalized score ▁▇███▇▆▇▇▆▇▇▇▇▇▇▇▇▆▇█▇▇▆▇▇▇▇▇▇▆▇▆▆▆▆▆▆▆▆
+wandb:           test/target smooth return ▁▇███▇▆▇▇▆▇▇▇▇▇▇▇▇▆▇█▇▇▆▇▇▇▇▇▇▆▇▆▆▆▆▆▆▆▆
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 1683.93375
+wandb:        test/target normalized score 19.31047
+wandb:                  test/target return 603.30826
+wandb: test/target smooth normalized score 20.44851
+wandb:           test/target smooth return 640.41562
+wandb: 
+wandb: Synced hopper-friction0.5mediummedium: https://wandb.ai/jjineeq/mobody/runs/qf497am5
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260504_160950-qf497am5/logs"
+logs/DARA_hopper-friction_shift2.0_seed1.log,error,4077,DARA,hopper-friction,1,2.0,,,,,,Error:,"wandb: - 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb: \ 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb: | 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb: / 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb: - 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb: \ 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                  test/source return ▁█▇▄▅▄▄▆▄▄▄▄▄▆▄▄▅▄▆▄▅▆▇▇▅▅▆▆▆▅▅▅▅▅▅▅▅▅▅▅
+wandb:        test/target normalized score ▆▇▁█████████████████████████████████████
+wandb:                  test/target return ▆▇▁█████████████████████████████████████
+wandb: test/target smooth normalized score ▄▇▁█████████████████████████████████████
+wandb:           test/target smooth return ▄▇▁█████████████████████████████████████
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 1512.13619
+wandb:        test/target normalized score 10.16245
+wandb:                  test/target return 305.0246
+wandb: test/target smooth normalized score 10.16665
+wandb:           test/target smooth return 305.1613
+wandb: 
+wandb: Synced hopper-friction2.0mediummedium: https://wandb.ai/jjineeq/mobody/runs/x5u1dhna
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260507_100652-x5u1dhna/logs"
+logs/DARA_hopper-friction_shift5.0_seed1.log,error,4077,DARA,hopper-friction,1,5.0,,,,,,Error:,"wandb: - 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb: \ 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb: | 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb: / 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb: - 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb: \ 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                  test/source return ▁▅█▄▇▅▄▄▃▄▅▃▄▃▅▄▆▆▄▅▅▅▆▄▆▆▆▇▇▆▇▆▆▇▆▆▆▅▆▆
+wandb:        test/target normalized score ▁▇▆▇██▇█████▇▇▇▇█▇█▇▇▇█████▇▇█▇█▇▇▇▇█▇▇▇
+wandb:                  test/target return ▁▇▆▇██▇█████▇▇▇▇█▇█▇▇▇█████▇▇█▇█▇▇▇▇█▇▇▇
+wandb: test/target smooth normalized score ▁▂▇▇████████████████████████████████████
+wandb:           test/target smooth return ▁▂▇▇████████████████████████████████████
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 1636.41743
+wandb:        test/target normalized score 7.9653
+wandb:                  test/target return 233.38338
+wandb: test/target smooth normalized score 7.9357
+wandb:           test/target smooth return 232.41831
+wandb: 
+wandb: Synced hopper-friction5.0mediummedium: https://wandb.ai/jjineeq/mobody/runs/9v5k5lpj
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260508_042311-9v5k5lpj/logs"
+logs/DARA_walker2d-friction_shift0.1_seed1.log,error,4077,DARA,walker2d-friction,1,0.1,,,,,,Error:,"wandb: / 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb: - 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb: \ 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb: | 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb: / 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb: - 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                  test/source return ▁▄▅▃▆▆▄▅▅▄▆▅▆▆▄█▅▇▆▇▇▇▆▆▇▇▇▆▇▇▆▇▇▇▇▇██▇█
+wandb:        test/target normalized score ▁▅▇▇▄▅▄▆▇▅▅▅▅█▅▆▅▇▅▅▅█▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅
+wandb:                  test/target return ▁▅▇▇▄▅▄▆▇▅▅▅▅█▅▆▅▇▅▅▅█▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅▅
+wandb: test/target smooth normalized score ▆▂▆█▄▄▁▃▄▂▂▃▅▅▃▆▅▄▃▃▃▅▃▃▃▂▂▁▂▂▂▂▂▂▂▂▂▂▂▂
+wandb:           test/target smooth return ▆▂▆█▄▄▁▃▄▂▂▃▅▅▃▆▅▄▃▃▃▅▃▃▃▂▂▁▂▂▂▂▂▂▂▂▂▂▂▂
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 3552.02398
+wandb:        test/target normalized score 5.62006
+wandb:                  test/target return 198.35731
+wandb: test/target smooth normalized score 5.6223
+wandb:           test/target smooth return 198.43217
+wandb: 
+wandb: Synced walker2d-friction0.1mediummedium: https://wandb.ai/jjineeq/mobody/runs/bhsxo1oe
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260503_141920-bhsxo1oe/logs"
+logs/DARA_walker2d-friction_shift0.5_seed1.log,error,4079,DARA,walker2d-friction,1,0.5,,,,,,Error:,"wandb: \ 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: | 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: / 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: - 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: \ 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: | 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                  test/source return ▁▇▇▆▆▆▆▇▆▇▇▇▅▇▄█▅▅▃▆█▃▆▆███▇▇███▆▇▇█▇▇█▇
+wandb:        test/target normalized score ▁▆▇▆▅▇▅▅▅▆█▆▅▆▆▆▇▅▆▅▇▆▅▇▆▇▇▆▇▆▆▅▆▆▇▅▇▇▇▆
+wandb:                  test/target return ▁▆▇▆▅▇▅▅▅▆█▆▅▆▆▆▇▅▆▅▇▆▅▇▆▇▇▆▇▆▆▅▆▆▇▅▇▇▇▆
+wandb: test/target smooth normalized score ▁▆▇▆▅▇▆▆▆▇▇▇▇▇▇▇███▇█▇▇▇▇▇▇▇█▇▇▇▇▇▇▇▇██▇
+wandb:           test/target smooth return ▁▆▇▆▅▇▆▆▆▇▇▇▇▇▇▇███▇█▇▇▇▇▇▇▇█▇▇▇▇▇▇▇▇██▇
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 3590.88797
+wandb:        test/target normalized score 64.46528
+wandb:                  test/target return 2730.04281
+wandb: test/target smooth normalized score 67.88825
+wandb:           test/target smooth return 2874.4669
+wandb: 
+wandb: Synced walker2d-friction0.5mediummedium: https://wandb.ai/jjineeq/mobody/runs/08rwv00s
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260504_091045-08rwv00s/logs"
+logs/DARA_walker2d-friction_shift2.0_seed1.log,error,4078,DARA,walker2d-friction,1,2.0,,,,,,Error:,"wandb: - 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: \ 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: | 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: / 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: - 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: \ 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                  test/source return ▁▅▆▄▇▆▅▅▇▄▆█▇▇█▇▆█▆▇▇▇▆▇▇▆▆█▇▇▇▆▆▇▆▇▇▆▇▇
+wandb:        test/target normalized score ▁▂▇▆▇▇▄█▇▇▆██▆██▆▆▆▆▇█▅▇▅▆▆█▇▅▆▅▇▇▆▇▆▇▇▇
+wandb:                  test/target return ▁▂▇▆▇▇▄█▇▇▆██▆██▆▆▆▆▇█▅▇▅▆▆█▇▅▆▅▇▇▆▇▆▇▇▇
+wandb: test/target smooth normalized score ▁▃▆▅▄▆▆▇▇████▇▇▇█▇▇▇▇█▇▇▇▇▆▇▇▇▇▇▇▇▇▇▇▇▇▇
+wandb:           test/target smooth return ▁▃▆▅▄▆▆▇▇████▇▇▇█▇▇▇▇█▇▇▇▇▆▇▇▇▇▇▇▇▇▇▇▇▇▇
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 2942.54975
+wandb:        test/target normalized score 59.63424
+wandb:                  test/target return 3093.1486
+wandb: test/target smooth normalized score 63.53309
+wandb:           test/target smooth return 3294.71783
+wandb: 
+wandb: Synced walker2d-friction2.0mediummedium: https://wandb.ai/jjineeq/mobody/runs/mawcmyqf
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260507_030142-mawcmyqf/logs"
+logs/DARA_walker2d-friction_shift5.0_seed1.log,error,4078,DARA,walker2d-friction,1,5.0,,,,,,Error:,"wandb: - 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb: \ 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb: | 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb: / 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb: - 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb: \ 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                  test/source return ▁▄▁▂▅█▆▆▅▆▇▄▆▆▅▇▄▆▅▇▆▇▆▇▅▅▆▅▇▇▇▇█▇▆▇▆▅█▆
+wandb:        test/target normalized score ▅▇▁▁▃▅▄▃█▃▄▄▃▄▃▄▄▄▄▄▄▄▄▅▄▅▅▄▄▄▃▄▅▄▄▄▄▄▄▄
+wandb:                  test/target return ▅▇▁▁▃▅▄▃█▃▄▄▃▄▃▄▄▄▄▄▄▄▄▅▄▅▅▄▄▄▃▄▅▄▄▄▄▄▄▄
+wandb: test/target smooth normalized score ▁▆▇▄▆▄▇█▆▆▇▅▆▆▄▆▆▅▄▆▆▅▆▆▅▆▇▆▅▆▆▆▆▅▆▆▆▆▆▆
+wandb:           test/target smooth return ▁▆▇▄▆▄▇█▆▆▇▅▆▆▄▆▆▅▄▆▆▅▆▆▅▆▇▆▅▆▆▆▆▅▆▆▆▆▆▆
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 3202.21199
+wandb:        test/target normalized score 5.02298
+wandb:                  test/target return 260.16158
+wandb: test/target smooth normalized score 4.99288
+wandb:           test/target smooth return 258.66291
+wandb: 
+wandb: Synced walker2d-friction5.0mediummedium: https://wandb.ai/jjineeq/mobody/runs/xss1kduv
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260507_214639-xss1kduv/logs"
+logs/IQL_halfcheetah-friction_shift0.1_seed1.log,error,4078,IQL,halfcheetah-friction,1,0.1,,,,,,Error:,"wandb: | 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: / 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: - 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: \ 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: | 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: / 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                  test/source return ▂▇▃▂▄▁▆▅▂▇▅▄▅▇▇█▆▇▇▆▆███▅▆▇▆█▇▅▇▅██▆▇▆██
+wandb:        test/target normalized score ▄▁█▃▆█▆▆▇▃▄▇▄▄▂▄▇▃▂▃▃▄▂▂▄▃▃▃▁▂▄▂▄▁▁▄▂▄▃▂
+wandb:                  test/target return ▄▁█▃▆█▆▆▇▃▄▇▄▄▂▄▇▃▂▃▃▄▂▂▄▃▃▃▁▂▄▂▄▁▁▄▂▄▃▂
+wandb: test/target smooth normalized score ▅▃▇▆▆▇█▆▇▅▆▇▇▆▄▄▃▃▂▅▃▂▂▃▃▃▂▃▂▂▂▃▂▂▂▄▁▂▁▁
+wandb:           test/target smooth return ▅▃▇▆▆▇█▆▇▅▆▇▇▆▄▄▃▃▂▅▃▂▂▃▃▃▂▃▂▂▂▃▂▂▂▄▁▂▁▁
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 4949.33523
+wandb:        test/target normalized score 12.73236
+wandb:                  test/target return 5064.44793
+wandb: test/target smooth normalized score 13.52166
+wandb:           test/target smooth return 5395.76955
+wandb: 
+wandb: Synced halfcheetah-friction0.1mediummedium: https://wandb.ai/jjineeq/mobody/runs/znv8kidx
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260504_010958-znv8kidx/logs"
+logs/IQL_halfcheetah-friction_shift0.5_seed1.log,error,4080,IQL,halfcheetah-friction,1,0.5,,,,,,Error:,"wandb: - 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: \ 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: | 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: / 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: - 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: \ 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                  test/source return ▁▄▇▇▆▅▇█▇▇▇▇▇▅███▇█▆████▇███▇█▇███████▇█
+wandb:        test/target normalized score ▁▄▆▅▆▆▅▇▇▇▇▆█▆▆▇▇▆▇█▇▆▇▇▇▇█▇█▇▇█████████
+wandb:                  test/target return ▁▄▆▅▆▆▅▇▇▇▇▆█▆▆▇▇▆▇█▇▆▇▇▇▇█▇█▇▇█████████
+wandb: test/target smooth normalized score ▁▅▆▆▆▆▆▇▇▇▇▇▇▇▇▆▇▇▇▇▇▇▇▇▇▇█▇██▇█████████
+wandb:           test/target smooth return ▁▅▆▆▆▆▆▇▇▇▇▇▇▇▇▆▇▇▇▇▇▇▇▇▇▇█▇██▇█████████
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 5092.74714
+wandb:        test/target normalized score 68.70277
+wandb:                  test/target return 4966.82345
+wandb: test/target smooth normalized score 67.25303
+wandb:           test/target smooth return 4856.10299
+wandb: 
+wandb: Synced halfcheetah-friction0.5mediummedium: https://wandb.ai/jjineeq/mobody/runs/bulul6at
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260504_201051-bulul6at/logs"
+logs/IQL_halfcheetah-friction_shift2.0_seed1.log,error,4077,IQL,halfcheetah-friction,1,2.0,,,,,,Error:,"wandb: \ 0.194 MB of 0.194 MB uploaded (0.000 MB deduped)
+wandb: | 0.194 MB of 0.194 MB uploaded (0.000 MB deduped)
+wandb: / 0.194 MB of 0.194 MB uploaded (0.000 MB deduped)
+wandb: - 0.194 MB of 0.194 MB uploaded (0.000 MB deduped)
+wandb: \ 0.194 MB of 0.194 MB uploaded (0.000 MB deduped)
+wandb: | 0.194 MB of 0.194 MB uploaded (0.000 MB deduped)
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                  test/source return ▁▅▇▇▇▇▇▇▇▇█▇▇▇▇█████████████████████████
+wandb:        test/target normalized score ▁▄▆▆▇▇▆▇█▇█▇▇▇▇█▇███████▇████▇██████████
+wandb:                  test/target return ▁▄▆▆▇▇▆▇█▇█▇▇▇▇█▇███████▇████▇██████████
+wandb: test/target smooth normalized score ▁▅▇▇▆▇▇▇▇▇▇▇▇▇▇█████████████████████████
+wandb:           test/target smooth return ▁▅▇▇▆▇▇▇▇▇▇▇▇▇▇█████████████████████████
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 5259.01279
+wandb:        test/target normalized score 48.67332
+wandb:                  test/target return 5334.84644
+wandb: test/target smooth normalized score 48.18269
+wandb:           test/target smooth return 5278.24664
+wandb: 
+wandb: Synced halfcheetah-friction2.0mediummedium: https://wandb.ai/jjineeq/mobody/runs/wgeu597a
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260507_141051-wgeu597a/logs"
+logs/IQL_halfcheetah-friction_shift5.0_seed1.log,error,4075,IQL,halfcheetah-friction,1,5.0,,,,,,Error:,"wandb: / 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: - 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: \ 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: | 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: / 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: - 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                  test/source return ▁▆▇▇▇▇█████▇███████████████▇████████████
+wandb:        test/target normalized score ▁▆█▇▇█▆█▆██▇▇▇▇▇▇▆▆▆▆▆▇▆▇▄▄▆▆▆▅▆▆▆▅▆▅▅▅▅
+wandb:                  test/target return ▁▆█▇▇█▆█▆██▇▇▇▇▇▇▆▆▆▆▆▇▆▇▄▄▆▆▆▅▆▆▆▅▆▅▅▅▅
+wandb: test/target smooth normalized score ▁▆▇█▆█████▇█▇▇▇█▇▇▇▆▇▆▇▆▆▅▆▅▅▅▅▆▆▆▅▆▅▆▅▆
+wandb:           test/target smooth return ▁▆▇█▆█████▇█▇▇▇█▇▇▇▆▇▆▇▆▆▅▆▅▅▅▅▆▆▆▅▆▅▆▅▆
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 5178.02579
+wandb:        test/target normalized score 45.53542
+wandb:                  test/target return 4491.70773
+wandb: test/target smooth normalized score 38.7672
+wandb:           test/target smooth return 3782.43215
+wandb: 
+wandb: Synced halfcheetah-friction5.0mediummedium: https://wandb.ai/jjineeq/mobody/runs/uekzmoqv
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260508_080704-uekzmoqv/logs"
+logs/IQL_hopper-friction_shift0.1_seed1.log,error,4077,IQL,hopper-friction,1,0.1,,,,,,Error:,"wandb: | 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: / 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: - 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: \ 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: | 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: / 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                  test/source return ▁█▆▄▃▆▆▅▆▅▆▆▇▅▆▅▅▅▅▇▆▇██▅▇▆▇▆▇▆█▆▇█▇▆▇▇▇
+wandb:        test/target normalized score ▁▄▅▄▃▃▅▅▅██▄▅▅▄▄▃▄▄▅▅▅▅▅▄▄▄▅▅▄▄▄▄▄▅▄▄▅▄▄
+wandb:                  test/target return ▁▄▅▄▃▃▅▅▅██▄▅▅▄▄▃▄▄▅▅▅▅▅▄▄▄▅▅▄▄▄▄▄▅▄▄▅▄▄
+wandb: test/target smooth normalized score ▁█▆▅▅▄▅▆█▇▇▇▆▅▅▄▅▅▅▆▅▆▆▅▆▆▅▆▅▆▅▆▅▅▅▅▅▆▆▆
+wandb:           test/target smooth return ▁█▆▅▅▄▅▆█▇▇▇▆▅▅▄▅▅▅▆▅▆▆▅▆▆▅▆▅▆▅▆▅▅▅▅▅▆▆▆
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 1667.88535
+wandb:        test/target normalized score 27.91071
+wandb:                  test/target return 883.73053
+wandb: test/target smooth normalized score 24.9995
+wandb:           test/target smooth return 788.80679
+wandb: 
+wandb: Synced hopper-friction0.1mediummedium: https://wandb.ai/jjineeq/mobody/runs/3k8387ce
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260503_192601-3k8387ce/logs"
+logs/IQL_hopper-friction_shift0.5_seed1.log,error,4084,IQL,hopper-friction,1,0.5,,,,,,Error:,"wandb: | 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: / 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: - 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: \ 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: | 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: / 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                  test/source return ▁▅▅▅▄▃▃▅▆▄▄▅▅▄▄▅▆▅▇▆▆▆▆▅▆▆▇▇▆█▆▇▇▆█▇▇▆▆▆
+wandb:        test/target normalized score ▁▅▄▄▃▃▄█▃▄▃▅▅▄▅▅▆▅▆▆▇▄▅▆▅▄▃▆▇▆▆▄▅▆▆▅▆▅▅▅
+wandb:                  test/target return ▁▅▄▄▃▃▄█▃▄▃▅▅▄▅▅▆▅▆▆▇▄▅▆▅▄▃▆▇▆▆▄▅▆▆▅▆▅▅▅
+wandb: test/target smooth normalized score ▁▇▇▆▅▅▅▆▅▅▅▆▇▆▇▇▇▇▇▇▇▆█▇▇▆▇▇█▇█▇▇▇▇▇█▇▇▇
+wandb:           test/target smooth return ▁▇▇▆▅▅▅▆▅▅▅▆▇▆▇▇▇▇▇▇▇▆█▇▇▆▇▇█▇█▇▇▇▇▇█▇▇▇
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 1852.37231
+wandb:        test/target normalized score 28.76847
+wandb:                  test/target return 911.69921
+wandb: test/target smooth normalized score 29.58542
+wandb:           test/target smooth return 938.33681
+wandb: 
+wandb: Synced hopper-friction0.5mediummedium: https://wandb.ai/jjineeq/mobody/runs/s7p1tts4
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260504_143840-s7p1tts4/logs"
+logs/IQL_hopper-friction_shift2.0_seed1.log,error,4075,IQL,hopper-friction,1,2.0,,,,,,Error:,"wandb: - 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: \ 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: | 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: / 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: - 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: \ 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                  test/source return ▁▂▇▅▅▇▆▆▅▄▄▅▅▄▅▅▅▅▅▆▆▆█▆▇▇▆▇▇▆▇█▇▇▇▇▆▆▆▇
+wandb:        test/target normalized score ▁▁▆▇█▇▇█▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+wandb:                  test/target return ▁▁▆▇█▇▇█▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+wandb: test/target smooth normalized score ▁▁▆█████▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+wandb:           test/target smooth return ▁▁▆█████▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 1955.98205
+wandb:        test/target normalized score 10.06057
+wandb:                  test/target return 301.70241
+wandb: test/target smooth normalized score 10.04502
+wandb:           test/target smooth return 301.19552
+wandb: 
+wandb: Synced hopper-friction2.0mediummedium: https://wandb.ai/jjineeq/mobody/runs/sfbmbxmc
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260507_084644-sfbmbxmc/logs"
+logs/IQL_hopper-friction_shift5.0_seed1.log,error,4076,IQL,hopper-friction,1,5.0,,,,,,Error:,"wandb: \ 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb: | 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb: / 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb: - 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb: \ 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb: | 0.196 MB of 0.196 MB uploaded (0.000 MB deduped)
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                  test/source return ▁▅█▆▅▅▆▄▆▅▄▅▄▅▄▅▅▆▅▄▅▆▅▅▇▇▆▇█▆▆▇▆▅▅▇█▇▆▆
+wandb:        test/target normalized score ▁▇▇███▇▇█▇███▇▇▇█▇▇██▇█▇████▇█▇█▇▇▇▇█▇██
+wandb:                  test/target return ▁▇▇███▇▇█▇███▇▇▇█▇▇██▇█▇████▇█▇█▇▇▇▇█▇██
+wandb: test/target smooth normalized score ▆▁▇██████████▇██████████████████████████
+wandb:           test/target smooth return ▆▁▇██████████▇██████████████████████████
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 2315.82309
+wandb:        test/target normalized score 7.91317
+wandb:                  test/target return 231.68369
+wandb: test/target smooth normalized score 7.9031
+wandb:           test/target smooth return 231.3552
+wandb: 
+wandb: Synced hopper-friction5.0mediummedium: https://wandb.ai/jjineeq/mobody/runs/tukihti8
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260508_030007-tukihti8/logs"
+logs/IQL_walker2d-friction_shift0.1_seed1.log,error,4097,IQL,walker2d-friction,1,0.1,,,,,,Error:,"wandb: \ 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: | 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: / 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: - 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: \ 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: | 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                  test/source return ▁▅▆▅▆▆▅▅▇▆▇▇▇▆▆▇█▇▇▇▇▆▇▅▅▇▇▇▇█▅█▆▆▆▇▇▇▇▆
+wandb:        test/target normalized score ▁▆▆▇▆▆▇▅▆▆▆▆█▇▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▇▆▆▆▆▆▆▆▆▆▆
+wandb:                  test/target return ▁▆▆▇▆▆▇▅▆▆▆▆█▇▆▆▆▆▆▆▆▆▆▆▆▆▆▆▆▇▆▆▆▆▆▆▆▆▆▆
+wandb: test/target smooth normalized score ▁▅▄▅▃▅▆▇▆▆▇▆▇█▆▇▆▇▆█▇█▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+wandb:           test/target smooth return ▁▅▄▅▃▅▆▇▆▆▇▆▇█▆▇▆▇▆█▇█▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 2412.452
+wandb:        test/target normalized score 6.15598
+wandb:                  test/target return 216.31098
+wandb: test/target smooth normalized score 6.12327
+wandb:           test/target smooth return 215.21531
+wandb: 
+wandb: Synced walker2d-friction0.1mediummedium: https://wandb.ai/jjineeq/mobody/runs/w1iolk0o
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260503_124651-w1iolk0o/logs"
+logs/IQL_walker2d-friction_shift0.5_seed1.log,error,4075,IQL,walker2d-friction,1,0.5,,,,,,Error:,"wandb: / 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: - 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: \ 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: | 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: / 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: - 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                  test/source return ▁▄▅▇▆█▆▇▇▅▇█▆█▇▇▇▇▆▆▇▇▇▇▆▆▇▇▇▇█▇▇▇▇█▇▆▇▆
+wandb:        test/target normalized score ▁▇▄▅▆▇▄▆▆▆▇▆▆▆▇▅▆▇▇▅▆█▇▇▆███▇▇▇▇█▆▆▆▇▇▇▆
+wandb:                  test/target return ▁▇▄▅▆▇▄▆▆▆▇▆▆▆▇▅▆▇▇▅▆█▇▇▆███▇▇▇▇█▆▆▆▇▇▇▆
+wandb: test/target smooth normalized score ▁▅▅▆▇▇▆▇▇▇▇▇▇▇▇▆▇▇▇▇▇▇█▇▇█▇▇▇█▇██▇▇▇▇▇▇▇
+wandb:           test/target smooth return ▁▅▅▆▇▇▆▇▇▇▇▇▇▇▇▆▇▇▇▇▇▇█▇▇█▇▇▇█▇██▇▇▇▇▇▇▇
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 2767.5494
+wandb:        test/target normalized score 70.7382
+wandb:                  test/target return 2994.71389
+wandb: test/target smooth normalized score 68.03251
+wandb:           test/target smooth return 2880.55361
+wandb: 
+wandb: Synced walker2d-friction0.5mediummedium: https://wandb.ai/jjineeq/mobody/runs/jzqau9oa
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260504_072000-jzqau9oa/logs"
+logs/IQL_walker2d-friction_shift2.0_seed1.log,error,4077,IQL,walker2d-friction,1,2.0,,,,,,Error:,"wandb: \ 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: | 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: / 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: - 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: \ 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: | 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                  test/source return ▁▃▅▄▅▅▆▅▇▅▇▆▇▇▆▆▇▆▅▆▇▇▇▇▇▆▇▇█▇▆▆█▆▆▆▇▅█▇
+wandb:        test/target normalized score ▁▂▄▅█▄▆▇▄█▇▄█▄▇▄▇▅▆▄▅▄▄▇▄▇█▇▆▇▅▅▄▅▄▅▆▄▅▅
+wandb:                  test/target return ▁▂▄▅█▄▆▇▄█▇▄█▄▇▄▇▅▆▄▅▄▄▇▄▇█▇▆▇▅▅▄▅▄▅▆▄▅▅
+wandb: test/target smooth normalized score ▁▃▇▅▇▅▇▆▆█▇▆▇▆▇█▆▆▇▇▆▇▇█▇▇▇█▇▇▆▆▅▆▅▅▅▅▅▅
+wandb:           test/target smooth return ▁▃▇▅▇▅▇▆▆█▇▆▇▆▇█▆▆▇▇▆▇▇█▇▇▇█▇▇▆▆▅▆▅▅▅▅▅▅
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 2794.50136
+wandb:        test/target normalized score 38.02561
+wandb:                  test/target return 1975.98988
+wandb: test/target smooth normalized score 37.67226
+wandb:           test/target smooth return 1957.72194
+wandb: 
+wandb: Synced walker2d-friction2.0mediummedium: https://wandb.ai/jjineeq/mobody/runs/4e97moii
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260507_010952-4e97moii/logs"
+logs/IQL_walker2d-friction_shift5.0_seed1.log,error,4076,IQL,walker2d-friction,1,5.0,,,,,,Error:,"wandb: - 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: \ 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: | 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: / 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: - 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb: \ 0.195 MB of 0.195 MB uploaded (0.000 MB deduped)
+wandb:                                                                                
+wandb: 
+wandb: Run history:
+wandb:                  test/source return ▁▅▅▃▂▇▄▇▇▇▇▇▇▇▇▅█▆▆▇▆▇▇▆▇▆▆▆▆▇▇▇▇▇▇▇▆▆▆▇
+wandb:        test/target normalized score ▁█▆▆▅▅▇▆▇▆▇▇▇▇▆▇▇▇▇▇▇▇▅▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+wandb:                  test/target return ▁█▆▆▅▅▇▆▇▆▇▇▇▇▆▇▇▇▇▇▇▇▅▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇▇
+wandb: test/target smooth normalized score ▂▁█▄▄▅▆▅▅▄▅▆▆▅▅▆▅▅▃▆▅▅▅▆▅▅▅▅▆▆▆▅▅▅▆▅▆▆▆▆
+wandb:           test/target smooth return ▂▁█▄▄▅▆▅▅▄▅▆▆▅▅▆▅▅▃▆▅▅▅▆▅▅▅▅▆▆▆▅▅▅▆▅▆▆▆▆
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 2266.24289
+wandb:        test/target normalized score 5.53167
+wandb:                  test/target return 285.48793
+wandb: test/target smooth normalized score 5.51196
+wandb:           test/target smooth return 284.50661
+wandb: 
+wandb: Synced walker2d-friction5.0mediummedium: https://wandb.ai/jjineeq/mobody/runs/oddj9lb1
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260507_201532-oddj9lb1/logs"
+logs/MOBODY_PROPOSED_BC_hopper-friction_shift0.1_seed1.log,error,17514,MOBODY,PROPOSED_BC_hopper-friction,1,0.1,,,,,,Error:,"wandb: Run history:
+wandb:                  test/source return ▂▅▅▄▇▄▃▆▅▅▆▄▅▄▅▃▅▅█▄▆▃▅▂▅▄▄▁▂▄▂▇▅▂▄▅▃▃▂▅
+wandb:        test/target normalized score ▁▅▇▅█▆▆▆▇▅▇▇▆▆▇▇▇▇▇█▇▅▆▅▅▇▅▅▄▅▄▇▇▄▆▅▅▅▄▆
+wandb:                  test/target return ▁▅▇▅█▆▆▆▇▅▇▇▆▆▇▇▇▇▇█▇▅▆▅▅▇▅▅▄▅▄▇▇▄▆▅▅▅▄▆
+wandb: test/target smooth normalized score ▁▅▅▅▆▆▆▇█▆▇▆▇▆▆▆▆▇▇▇▆▆▆▅▅▅▅▅▅▄▅▆▆▅▅▄▆▄▆▄
+wandb:           test/target smooth return ▁▅▅▅▆▆▆▇█▆▇▆▇▆▆▆▆▇▇▇▆▆▆▅▅▅▅▅▅▄▅▆▆▅▅▄▆▄▆▄
+wandb:                   train/policy_loss █▅▄▃▄▂▄▃▃▃▄▃▁▂▁▂▂▂▃▂▃▂▂▂▂▂▃▃▁▂▃▂▂▁▂▂▁▁▂▂
+wandb:                            train/q1 ▁▆▇█▇██████▇█████████████████▇█▇▇▇█████▇
+wandb:                    train/q_behavior ▁▆▇▇▇█████████████▇██████████▇█▇▇▇█████▇
+wandb:                      train/q_policy ▁▆▇▇▇█████████████▇██████████▇█▇▇▇█████▇
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 1458.06905
+wandb:        test/target normalized score 21.95362
+wandb:                  test/target return 689.49151
+wandb: test/target smooth normalized score 24.95813
+wandb:           test/target smooth return 787.45776
+wandb:                   train/policy_loss -2.02195
+wandb:                            train/q1 256.87338
+wandb:                    train/q_behavior 256.08148
+wandb:                      train/q_policy 256.54648
+wandb: 
+wandb: Synced hopper-friction0.1mediummedium: https://wandb.ai/jjineeq/mobody/runs/8i0yy9cx
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260516_131506-8i0yy9cx/logs"
+logs/MOBODY_PROPOSED_BC_walker2d-friction_shift0.1_seed1.log,error,17515,MOBODY,PROPOSED_BC_walker2d-friction,1,0.1,,,,,,Error:,"wandb: Run history:
+wandb:                  test/source return ▂▆█▅█▃▆▂▂▂▂▂▃▂▂▂▁▁▂▂▂▃▂▁▁▂▁▂▁▁▁▁▁▁▂▁▁▁▂▁
+wandb:        test/target normalized score ▁▁▃▂▂▂█▁▄▁▃▃▁▂▃▂▄▅▁▅▂▁▂▂▃▂▁▂▁▃▁▁▂▂▄▁▁▅▂▂
+wandb:                  test/target return ▁▁▃▂▂▂█▁▄▁▃▃▁▂▃▂▄▅▁▅▂▁▂▂▃▂▁▂▁▃▁▁▂▂▄▁▁▅▂▂
+wandb: test/target smooth normalized score ▂▅▅▆▃▄▆▃▅▄▇▃▃▂▅▄▅█▅▃▃▄▃▆▆▅▁▄▃▂▁▃▂▆▃▅▃▄▃▃
+wandb:           test/target smooth return ▂▅▅▆▃▄▆▃▅▄▇▃▃▂▅▄▅█▅▃▃▄▃▆▆▅▁▄▃▂▁▃▂▆▃▅▃▄▃▃
+wandb:                   train/policy_loss ▁▁▁▁▂▁▃▄▄▅▆▅▆▆▅▆▅▅▆▅▅▅▇██▇▆▆██▇▇▇▇▇▇▅▆▇█
+wandb:                            train/q1 ▂▆███▇▆▅▄▄▃▄▃▃▄▃▄▄▃▄▄▄▂▁▁▂▃▃▁▁▂▂▂▂▂▂▄▃▂▁
+wandb:                    train/q_behavior ▂▆███▇▆▅▄▄▃▄▃▃▄▂▄▄▃▄▄▄▂▁▁▂▃▃▁▁▂▂▂▂▂▂▄▃▂▁
+wandb:                      train/q_policy ▂▆███▇▆▅▄▄▃▄▃▃▄▃▄▄▃▄▄▄▂▁▁▂▃▃▁▂▂▂▂▂▂▂▄▃▂▁
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 642.67776
+wandb:        test/target normalized score 9.18511
+wandb:                  test/target return 317.79009
+wandb: test/target smooth normalized score 12.99041
+wandb:           test/target smooth return 445.2714
+wandb:                   train/policy_loss -0.78579
+wandb:                            train/q1 45.82111
+wandb:                    train/q_behavior 44.11215
+wandb:                      train/q_policy 48.76156
+wandb: 
+wandb: Synced walker2d-friction0.1mediummedium: https://wandb.ai/jjineeq/mobody/runs/0w9yk3u9
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260516_113007-0w9yk3u9/logs"
+logs/MOBODY_PROPOSED_BOTH_hopper-friction_shift0.1_seed1.log,error,11249,MOBODY,PROPOSED_BOTH_hopper-friction,1,0.1,,,,,,Error:,"       device='cuda:0')
+penalty std tensor(0.2694, device='cuda:0')
+penalty min tensor(0.0784, device='cuda:0')
+reward mse 0.0012903411407023668
+obs mse 0.38284602761268616
+[642] Evaluation on target over 10 episodes: 998.2291975373148
+evaluate time 0.7591307163238525
+train + evaluate 2.989950656890869
+tensor(24.0527, device='cuda:0') tensor(1.1642, device='cuda:0') tensor(47.3165, device='cuda:0')
+[643] Evaluation on source over 10 episodes: 1833.3872789519367
+true reward         tensor([2.9468, 1.8655, 1.5182, 2.1476, 2.5293, 3.0723, 2.1811, 3.0173],
        device='cuda:0')
-pred reward         tensor([ 3.2214,  4.7973,  4.2773,  3.4293,  4.8429, -0.0762,  3.7058, -0.0651],
+pred reward         tensor([2.9462, 1.8687, 1.5539, 2.1431, 2.5511, 3.0560, 2.1743, 2.9952],
        device='cuda:0')
-penalty             tensor([[5.0338, 4.3794, 4.9496, 3.9698, 3.8383, 4.8548, 4.7910, 4.8547]],
+penalty             tensor([[0.1634, 0.1322, 0.1261, 0.1176, 0.1356, 0.1526, 0.1162, 0.1472]],
        device='cuda:0')
-obs mse id          tensor([ 8.0609,  6.6257,  4.4226,  8.8358,  2.9784,  4.3223,  9.4264, 10.0339],
+obs mse id          tensor([0.2676, 0.3269, 0.1628, 0.1421, 0.2849, 0.3821, 0.1877, 0.2353],
        device='cuda:0')
-penalty std tensor(1.5962, device='cuda:0')
-penalty min tensor(1.0146, device='cuda:0')
-reward mse 0.0313839353621006
-obs mse 5.771273136138916
-[1000] Evaluation on target over 10 episodes: 4350.65795596687
-evaluate time 1.2593393325805664
-train + evaluate 4.970845460891724
-[1;34mwandb[0m: 
-[1;34mwandb[0m: 🚀 View run [33mhalfcheetah-friction2.0mediummedium[0m at: [34mhttps://wandb.ai/jjineeq/mobody/runs/vy3i6hhl[0m
-[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20260502_200942-vy3i6hhl/logs[0m"
-logs/MOBODY_hopper-friction_shift2.0_seed1.log,error,18394,MOBODY,hopper-friction,1,2.0,,,,,0.001229669083841145,Error:,"reward mse 0.0017517912201583385
-obs mse 0.6007285714149475
-[999] Evaluation on target over 10 episodes: 306.8778573135686
-evaluate time 1.6343994140625
-train + evaluate 10.014397859573364
-tensor(28.9336, device='cuda:0') tensor(1.0494, device='cuda:0') tensor(55.8181, device='cuda:0')
-[1000] Evaluation on source over 10 episodes: 1196.9095103307804
-true reward         tensor([3.0063, 2.9385, 1.5689, 1.3956, 3.4482, 3.0600, 3.0431, 1.6830],
-       device='cuda:0')
-pred reward         tensor([3.0715, 2.9994, 1.5741, 1.4088, 3.4302, 3.0781, 3.0735, 1.6736],
-       device='cuda:0')
-penalty             tensor([[0.4285, 0.5442, 0.0723, 0.0563, 1.2039, 0.1936, 0.5158, 0.0543]],
-       device='cuda:0')
-obs mse id          tensor([1.4403, 0.8585, 0.0836, 0.1860, 1.2280, 0.3172, 0.6784, 0.0348],
-       device='cuda:0')
-penalty std tensor(0.2464, device='cuda:0')
-penalty min tensor(0.0430, device='cuda:0')
-reward mse 0.0008884783019311726
-obs mse 0.37239378690719604
-[1000] Evaluation on target over 10 episodes: 307.5952039778291
-evaluate time 1.4359049797058105
-train + evaluate 9.840580701828003
-[1;34mwandb[0m: 
-[1;34mwandb[0m: 🚀 View run [33mhopper-friction2.0mediummedium[0m at: [34mhttps://wandb.ai/jjineeq/mobody/runs/0v1v8yvt[0m
-[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20260502_084113-0v1v8yvt/logs[0m"
-logs/MOBODY_walker2d-friction_shift2.0_seed1.log,error,19083,MOBODY,walker2d-friction,1,2.0,,,,,0.045806609094142914,Error:,"reward mse 0.0016403202898800373
-obs mse 1.6787877082824707
-[999] Evaluation on target over 10 episodes: 2928.8995092579594
-evaluate time 5.146386623382568
-train + evaluate 17.802513360977173
-tensor(34.6267, device='cuda:0') tensor(0.6020, device='cuda:0') tensor(81.3637, device='cuda:0')
-[1000] Evaluation on source over 10 episodes: 3218.0120862386175
-true reward         tensor([2.3035, 3.5655, 3.7936, 3.2760, 3.6376, 3.7297, 3.1255, 3.4526],
-       device='cuda:0')
-pred reward         tensor([2.2843, 3.5664, 3.8180, 3.1556, 3.6540, 3.6381, 3.1079, 3.4413],
-       device='cuda:0')
-penalty             tensor([[0.3853, 2.6035, 1.5029, 2.9501, 1.9960, 2.9761, 2.1409, 2.6188]],
-       device='cuda:0')
-obs mse id          tensor([0.3757, 2.8466, 3.0156, 4.1351, 2.1703, 3.3793, 0.9390, 2.7930],
-       device='cuda:0')
-penalty std tensor(1.4089, device='cuda:0')
-penalty min tensor(0.0922, device='cuda:0')
-reward mse 0.0021696395706385374
-obs mse 3.1996450424194336
-[1000] Evaluation on target over 10 episodes: 2878.516027236551
-evaluate time 5.029021978378296
-train + evaluate 17.537976503372192
-[1;34mwandb[0m: 
-[1;34mwandb[0m: 🚀 View run [33mwalker2d-friction2.0mediummedium[0m at: [34mhttps://wandb.ai/jjineeq/mobody/runs/4c83hmhc[0m
-[1;34mwandb[0m: Find logs at: [1;35mwandb/run-20260501_162919-4c83hmhc/logs[0m"
+penalty std tensor(0.2338, device='cuda:0')
+penalty min tensor(0.0699, device='cuda:0')
+reward mse 0.0011225542984902859
+obs mse 0.37586432695388794
+[643] Evaluation on target over 10 episodes: 1059.2694635442692
+evaluate time 0.915917158126831
+train + evaluate 3.1433627605438232"
+logs/MOBODY_PROPOSED_BOTH_walker2d-friction_shift0.1_seed1.log,error,17510,MOBODY,PROPOSED_BOTH_walker2d-friction,1,0.1,,,,,,Error:,"wandb: Run history:
+wandb:                  test/source return ▂▆█▅█▃▆▂▂▂▂▂▃▂▂▂▁▁▂▂▂▃▂▁▁▂▁▂▁▁▁▁▁▁▂▁▁▁▂▁
+wandb:        test/target normalized score ▁▁▃▂▂▂█▁▄▁▃▃▁▂▃▂▄▅▁▅▂▁▂▂▃▂▁▂▁▃▁▁▂▂▄▁▁▅▂▂
+wandb:                  test/target return ▁▁▃▂▂▂█▁▄▁▃▃▁▂▃▂▄▅▁▅▂▁▂▂▃▂▁▂▁▃▁▁▂▂▄▁▁▅▂▂
+wandb: test/target smooth normalized score ▂▅▅▆▃▄▆▃▅▄▇▃▃▂▅▄▅█▅▃▃▄▃▆▆▅▁▄▃▂▁▃▂▆▃▅▃▄▃▃
+wandb:           test/target smooth return ▂▅▅▆▃▄▆▃▅▄▇▃▃▂▅▄▅█▅▃▃▄▃▆▆▅▁▄▃▂▁▃▂▆▃▅▃▄▃▃
+wandb:                   train/policy_loss ▁▁▁▁▂▁▃▄▄▅▆▅▆▆▅▆▅▅▆▅▅▅▇██▇▆▆██▇▇▇▇▇▇▅▆▇█
+wandb:                            train/q1 ▂▆███▇▆▅▄▄▃▄▃▃▄▃▄▄▃▄▄▄▂▁▁▂▃▃▁▁▂▂▂▂▂▂▄▃▂▁
+wandb:                    train/q_behavior ▂▆███▇▆▅▄▄▃▄▃▃▄▂▄▄▃▄▄▄▂▁▁▂▃▃▁▁▂▂▂▂▂▂▄▃▂▁
+wandb:                      train/q_policy ▂▆███▇▆▅▄▄▃▄▃▃▄▃▄▄▃▄▄▄▂▁▁▂▃▃▁▂▂▂▂▂▂▂▄▃▂▁
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 642.67776
+wandb:        test/target normalized score 9.18511
+wandb:                  test/target return 317.79009
+wandb: test/target smooth normalized score 12.99041
+wandb:           test/target smooth return 445.2714
+wandb:                   train/policy_loss -0.78579
+wandb:                            train/q1 45.82111
+wandb:                    train/q_behavior 44.11215
+wandb:                      train/q_policy 48.76156
+wandb: 
+wandb: Synced walker2d-friction0.1mediummedium: https://wandb.ai/jjineeq/mobody/runs/77np2atp
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260516_122255-77np2atp/logs"
+logs/MOBODY_halfcheetah-friction_shift0.1_seed1.log,error,18703,MOBODY,halfcheetah-friction,1,0.1,,,,,1.1162222623825073,Error:,"wandb: Run history:
+wandb:                  test/source return ▁▇█▇█▇▆███▇▇█▇▇███▇██▇██▇███▇███▇██▇▇███
+wandb:        test/target normalized score █▃▁▂▂▃▃▃▂▃▅▃▃▁▂▃▂▄▂▂▂▄▄▂▁▃▁▂▂▃▃▂▄▂▂▁▂▃▃▂
+wandb:                  test/target return █▃▁▂▂▃▃▃▂▃▅▃▃▁▂▃▂▄▂▂▂▄▄▂▁▃▁▂▂▃▃▂▄▂▂▁▂▃▃▂
+wandb: test/target smooth normalized score █▆▁▁▂▁▃▃▃▃▃▁▂▁▂▃▁▂▂▁▂▃▃▂▃▂▂▁▁▂▂▁▃▁▁▂▁▁▂▁
+wandb:           test/target smooth return █▆▁▁▂▁▃▃▃▃▃▁▂▁▂▃▁▂▂▁▂▃▃▂▃▂▂▁▁▂▂▁▃▁▁▂▁▁▂▁
+wandb:                   train/policy_loss █▄▃▃▃▃▂▃▃▂▂▂▂▂▂▁▂▂▂▁▁▁▁▁▁▁▂▂▂▁▂▂▁▂▁▁▁▁▁▁
+wandb:                            train/q1 ▁▅▆▆▆▆▆▇▆▆▇▇▇▇▇▇▇▇▇▇▇▇▇▇██▇▇███▇█▇▇██▇██
+wandb:                    train/q_behavior ▁▅▆▆▆▆▆▇▆▆▇▇▇▇▇▇▇▇▇▇▇▇▇▇██▇▇███▇█▇███▇██
+wandb:                      train/q_policy ▁▅▆▆▆▆▆▇▆▆▇▇▇▇▇▇▇▇▇▇▇▇▇▇███▇███▇█▇███▇██
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 4869.21433
+wandb:        test/target normalized score 8.99274
+wandb:                  test/target return 3494.67832
+wandb: test/target smooth normalized score 8.54828
+wandb:           test/target smooth return 3308.10994
+wandb:                   train/policy_loss -2.45418
+wandb:                            train/q1 1682.10156
+wandb:                    train/q_behavior 1669.56042
+wandb:                      train/q_policy 1676.14282
+wandb: 
+wandb: Synced halfcheetah-friction0.1mediummedium: https://wandb.ai/jjineeq/mobody/runs/izfhzcph
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260504_044741-izfhzcph/logs"
+logs/MOBODY_halfcheetah-friction_shift0.5_seed1.log,error,18967,MOBODY,halfcheetah-friction,1,0.5,,,,,0.41578444838523865,Error:,"wandb: Run history:
+wandb:                  test/source return ▁▅▆██▇▅▅▅▇▂▇▆▄▇▆▆▅▇▇▆▇▆█▇▇▆▇▆▇▆█▇▇▆▇▇█▅▆
+wandb:        test/target normalized score ▁▆▇█▄▆▄▆▇▄▇▅▆▃▆▆▄▂▅▆▆▄▆▇▅▆▅▆▆▄▆▆▇▆▅▆▆▆▅▅
+wandb:                  test/target return ▁▆▇█▄▆▄▆▇▄▇▅▆▃▆▆▄▂▅▆▆▄▆▇▅▆▅▆▆▄▆▆▇▆▅▆▆▆▅▅
+wandb: test/target smooth normalized score ▁▆█▇▄▅▇▇▇▆▆▄▅▃▄▅▅▃▄▆▆▅▅▇▆▇▆▇█▆█▅▆▇▆▆▆▇▆▇
+wandb:           test/target smooth return ▁▆█▇▄▅▇▇▇▆▆▄▅▃▄▅▅▃▄▆▆▅▅▇▆▇▆▇█▆█▅▆▇▆▆▆▇▆▇
+wandb:                   train/policy_loss █▃▃▂▁▂▁▂▂▂▁▁▁▁▂▁▁▁▁▂▂▁▁▁▁▁▂▁▁▁▁▁▁▁▁▁▁▁▁▁
+wandb:                            train/q1 ▁▄▆▆▆▇▇▇▇▇▇▇▇▇▇█████████████████████████
+wandb:                    train/q_behavior ▁▄▆▆▆▇▇▇▇▇▇▇▇▇██████████████████████████
+wandb:                      train/q_policy ▁▄▆▆▆▇▇▇▇▇▇▇▇▇██████████████████████████
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 4296.45558
+wandb:        test/target normalized score 53.27657
+wandb:                  test/target return 3788.68568
+wandb: test/target smooth normalized score 57.63894
+wandb:           test/target smooth return 4121.85091
+wandb:                   train/policy_loss -2.39082
+wandb:                            train/q1 434.55685
+wandb:                    train/q_behavior 432.30197
+wandb:                      train/q_policy 436.87491
+wandb: 
+wandb: Synced halfcheetah-friction0.5mediummedium: https://wandb.ai/jjineeq/mobody/runs/y65fc8v7
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260504_234620-y65fc8v7/logs"
+logs/MOBODY_halfcheetah-friction_shift2.0_seed1.log,error,18674,MOBODY,halfcheetah-friction,1,2.0,,,,,0.2272130250930786,Error:,"wandb: Run history:
+wandb:                  test/source return ▁▇███▇████▇▇▅████▆█▇█████████▇█▇▇██▇███▇
+wandb:        test/target normalized score ▁▇▇████▇▇███▇▆█▇▅▇▇▆▇▆██▇█▆███▇▇▇▇▇▇▆▇▇▆
+wandb:                  test/target return ▁▇▇████▇▇███▇▆█▇▅▇▇▆▇▆██▇█▆███▇▇▇▇▇▇▆▇▇▆
+wandb: test/target smooth normalized score ▁▇▇██▇▇▇▇▇▇▇▇▇▇▇▆▇▇▇█▇██▇█▇▇█▇▇▇▇▇▇▇▆▇▇▇
+wandb:           test/target smooth return ▁▇▇██▇▇▇▇▇▇▇▇▇▇▇▆▇▇▇█▇██▇█▇▇█▇▇▇▇▇▇▇▆▇▇▇
+wandb:                   train/policy_loss █▃▂▂▂▃▃▂▁▂▂▂▂▁▂▂▁▁▂▁▂▃▂▁▁▁▂▂▁▁▁▁▂▂▂▁▂▁▂▁
+wandb:                            train/q1 ▁▅▇▇▇███████████████████████████▇▇█▇▇▇▇▇
+wandb:                    train/q_behavior ▁▅▇▇▇██████████████████████████▇▇▇█▇▇▇▇▇
+wandb:                      train/q_policy ▁▅▇▇▇██████████████████████████▇▇██▇▇▇▇▇
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 4932.42375
+wandb:        test/target normalized score 40.14197
+wandb:                  test/target return 4350.65796
+wandb: test/target smooth normalized score 42.27861
+wandb:           test/target smooth return 4597.14333
+wandb:                   train/policy_loss -2.38333
+wandb:                            train/q1 444.40567
+wandb:                    train/q_behavior 442.70871
+wandb:                      train/q_policy 445.47101
+wandb: 
+wandb: Synced halfcheetah-friction2.0mediummedium: https://wandb.ai/jjineeq/mobody/runs/ufx0p8td
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260507_174649-ufx0p8td/logs"
+logs/MOBODY_halfcheetah-friction_shift5.0_seed1.log,error,18647,MOBODY,halfcheetah-friction,1,5.0,,,,,0.16675321757793427,Error:,"wandb: Run history:
+wandb:                  test/source return ▁▇█▇▇▇▆▇▇█▆█▇▇▇█▇▇▇█▇█▇█▇▇█▇▇▇▇▇█▇▇█▇██▇
+wandb:        test/target normalized score ▆▅▇█▇█▆▇▆▇▆▆▇▆▆▆▆▄▄▅▄▆▆▁▆▄▅▆▃▃█▅▃▄▅▃▅▇▁█
+wandb:                  test/target return ▆▅▇█▇█▆▇▆▇▆▆▇▆▆▆▆▄▄▅▄▆▆▁▆▄▅▆▃▃█▅▃▄▅▃▅▇▁█
+wandb: test/target smooth normalized score ▂▄▇▅▇█▇▇▆▅▅▇▆▆▆▅▅▃▃▂▂▅▃▂▄▂▃▄▂▁▄▁▃▄▃▂▄▁▁▄
+wandb:           test/target smooth return ▂▄▇▅▇█▇▇▆▅▅▇▆▆▆▅▅▃▃▂▂▅▃▂▄▂▃▄▂▁▄▁▃▄▃▂▄▁▁▄
+wandb:                   train/policy_loss █▅▃▂▂▂▂▁▁▂▂▂▂▂▁▁▂▂▃▂▃▃▂▂▃▃▃▂▂▃▃▂▄▂▂▃▂▃▂▁
+wandb:                            train/q1 ▁▃▅▅▆▇▇▇███████████▇▇▇▇▇▇▇▇▆▆▆▆▆▆▆▆▆▆▆▆▆
+wandb:                    train/q_behavior ▁▃▅▅▆▇▇▇███████████▇▇▇▇▇▇▇▇▆▆▆▆▆▆▆▆▆▆▆▆▆
+wandb:                      train/q_policy ▁▃▅▅▆▇▇████████████▇▇▇▇▇▇▇▇▆▆▆▆▆▆▆▆▆▆▆▆▆
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 4846.8584
+wandb:        test/target normalized score 36.63078
+wandb:                  test/target return 3558.54574
+wandb: test/target smooth normalized score 43.86064
+wandb:           test/target smooth return 4316.19997
+wandb:                   train/policy_loss -2.38012
+wandb:                            train/q1 619.29877
+wandb:                    train/q_behavior 617.62384
+wandb:                      train/q_policy 625.24084
+wandb: 
+wandb: Synced halfcheetah-friction5.0mediummedium: https://wandb.ai/jjineeq/mobody/runs/kngzya9q
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260508_114800-kngzya9q/logs"
+logs/MOBODY_hopper-friction_shift0.1_seed1.log,error,18523,MOBODY,hopper-friction,1,0.1,,,,,0.004556998144835234,Error:,"wandb: Run history:
+wandb:                  test/source return ▄▂▃█▂▃▇▂▆▄▁█▄▃▇▆▅▃▅▃▄▆▅▅▆▅▃▆▃█▅▆▄▃▆▄▆▅▃▄
+wandb:        test/target normalized score ▃▅▇▄▄▂▅▄▄▅▂▄▃▁▆▃▆▂▅▂▂▅▅▃▄▄▂█▂▅▄▇▃▂▇▅▄▃▁▄
+wandb:                  test/target return ▃▅▇▄▄▂▅▄▄▅▂▄▃▁▆▃▆▂▅▂▂▅▅▃▄▄▂█▂▅▄▇▃▂▇▅▄▃▁▄
+wandb: test/target smooth normalized score ▂▆▇▅▇▆█▅▄▅▄▆▃▄▅▁▅▃▃▇▅▅▃▄█▄▃▆▄▅▂▆▄▆█▇▆▄▂▅
+wandb:           test/target smooth return ▂▆▇▅▇▆█▅▄▅▄▆▃▄▅▁▅▃▃▇▅▅▃▄█▄▃▆▄▅▂▆▄▆█▇▆▄▂▅
+wandb:                   train/policy_loss █▄▄▂▃▂▃▂▂▂▁▂▁▂▂▂▁▃▂▂▁▂▂▂▂▂▂▃▂▁▂▁▂▂▂▃▂▂▁▁
+wandb:                            train/q1 ▁▆▇▇▇█▇▇▇█▇▇▇▇▇█▇██▇▇█▇██████████▇██▇███
+wandb:                    train/q_behavior ▁▆▇▇▇█▇▇▇█▇▇▇▇▇█▇██▇▇█▇██████████▇██▇███
+wandb:                      train/q_policy ▁▆▇▇▇█▇▇▇█▇▇▇▇▇█▇██▇▇█▇██████████▇██▇███
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 1480.46037
+wandb:        test/target normalized score 21.60961
+wandb:                  test/target return 678.27465
+wandb: test/target smooth normalized score 29.76987
+wandb:           test/target smooth return 944.35109
+wandb:                   train/policy_loss -2.12289
+wandb:                            train/q1 271.68262
+wandb:                    train/q_behavior 270.58542
+wandb:                      train/q_policy 270.69855
+wandb: 
+wandb: Synced hopper-friction0.1mediummedium: https://wandb.ai/jjineeq/mobody/runs/74vvmynn
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260503_225050-74vvmynn/logs"
+logs/MOBODY_hopper-friction_shift0.5_seed1.log,error,18073,MOBODY,hopper-friction,1,0.5,,,,,0.015175014734268188,Error:,"wandb: Run history:
+wandb:                  test/source return ▁▆▅▆▇▆▅▅▆▇▆▅▄▄▄▅▇▆▅▆▅▄▆█▆▅▆▆▆▄▆▄▅▆█▄▆▇▇▅
+wandb:        test/target normalized score ▁▇▇▆▅▇▆▆▆▇▇▇▄▄▆▇▇█▆▇█▅█▇▇▇▅▆▆▆█▄▆▅▆▄▇▇▇▅
+wandb:                  test/target return ▁▇▇▆▅▇▆▆▆▇▇▇▄▄▆▇▇█▆▇█▅█▇▇▇▅▆▆▆█▄▆▅▆▄▇▇▇▅
+wandb: test/target smooth normalized score ▁█▆▆▅▆▆▆▆▆█▅▆▅▅▆▆▆▆▆▇▇▇▇▇▇▇▅▅▆█▅▅▆▇▅▅▆▆▅
+wandb:           test/target smooth return ▁█▆▆▅▆▆▆▆▆█▅▆▅▅▆▆▆▆▆▇▇▇▇▇▇▇▅▅▆█▅▅▆▇▅▅▆▆▅
+wandb:                   train/policy_loss █▅▅▃▃▄▃▂▃▃▃▃▂▃▃▂▃▃▂▂▂▃▂▁▃▁▃▂▂▂▂▄▃▃▃▃▃▂▂▂
+wandb:                            train/q1 ▁▅▇█████████▇▇▇▇████▇█▇██████▇█▇█████▇██
+wandb:                    train/q_behavior ▁▆▇█████████▇▇▇▇█▇██▇█▇██████▇█▇████████
+wandb:                      train/q_policy ▁▆▇█████████▇▇▇▇█▇██▇█▇██████▇█▇████████
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 1469.99438
+wandb:        test/target normalized score 29.09173
+wandb:                  test/target return 922.23949
+wandb: test/target smooth normalized score 28.43822
+wandb:           test/target smooth return 900.93083
+wandb:                   train/policy_loss -2.06543
+wandb:                            train/q1 261.15964
+wandb:                    train/q_behavior 260.39691
+wandb:                      train/q_policy 260.70648
+wandb: 
+wandb: Synced hopper-friction0.5mediummedium: https://wandb.ai/jjineeq/mobody/runs/9ilxt0cg
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260504_181009-9ilxt0cg/logs"
+logs/MOBODY_hopper-friction_shift2.0_seed1.log,error,18439,MOBODY,hopper-friction,1,2.0,,,,,0.001229669083841145,Error:,"wandb: Run history:
+wandb:                  test/source return ▆▇█▇▄▆▄▄▅▆▅▆▄▅▄▅▄▄▅▄▃▃▄▃▄▃▄▆▄▄▄▄▄▁▄▃▃▄▄▃
+wandb:        test/target normalized score █▁▂▂▃▂▁▂▄▂▃▁▂▂▄▄▃▁▅▁▂▂▄▃▄▂▃▂▃▂▂▃▃▃▂▂▃▂▇▆
+wandb:                  test/target return █▁▂▂▃▂▁▂▄▂▃▁▂▂▄▄▃▁▅▁▂▂▄▃▄▂▃▂▃▂▂▃▃▃▂▂▃▂▇▆
+wandb: test/target smooth normalized score █▃▃▄▃▃▁▄▄▂▃▃▄▄▄▄▅▃▄▄▄▄▅▄▄▅▅▄▄▄▃▄▄▄▄▃▅▃▆▅
+wandb:           test/target smooth return █▃▃▄▃▃▁▄▄▂▃▃▄▄▄▄▅▃▄▄▄▄▅▄▄▅▅▄▄▄▃▄▄▄▄▃▅▃▆▅
+wandb:                   train/policy_loss █▄▅▄▃▃▄▃▂▂▃▃▃▄▂▂▂▃▂▄▃▂▄▂▃▃▃▃▃▃▂▃▃▂▄▂▃▂▃▁
+wandb:                            train/q1 ▁▄▄▄▅▅▆▆▇▇▇▇▇▇▇▇▇▇▇██▇▇██████▇▇▇▇▇▇▇████
+wandb:                    train/q_behavior ▁▄▄▄▅▅▆▆▇▇▇▇▇▇▇▇▇▇▇██▇▇█████▇▇▇▇▇▇▇▇████
+wandb:                      train/q_policy ▁▄▄▄▅▅▆▆▇▇▇▇▇▇▇▇▇▇▇██▇▇█████▇█▇▇█▇▇▇████
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 1196.90951
+wandb:        test/target normalized score 10.24129
+wandb:                  test/target return 307.5952
+wandb: test/target smooth normalized score 10.1633
+wandb:           test/target smooth return 305.05207
+wandb:                   train/policy_loss -2.27229
+wandb:                            train/q1 176.76814
+wandb:                    train/q_behavior 176.28624
+wandb:                      train/q_policy 177.56624
+wandb: 
+wandb: Synced hopper-friction2.0mediummedium: https://wandb.ai/jjineeq/mobody/runs/3y15dxbm
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260507_120315-3y15dxbm/logs"
+logs/MOBODY_hopper-friction_shift5.0_seed1.log,error,17898,MOBODY,hopper-friction,1,5.0,,,,,0.006906813941895962,Error:,"wandb: Run history:
+wandb:                  test/source return █▁▁▅▁▁▄▂▃▃▃▅▃▃▃▄▃▃▃▂▃▃▃▅▃▃▃▄▃▃▃▃▃▃▃▃▃▅▃▃
+wandb:        test/target normalized score ▁▇▇█████████████████████████████████████
+wandb:                  test/target return ▁▇▇█████████████████████████████████████
+wandb: test/target smooth normalized score ▁▇▆▆▇▇▇▇▇▇███▇▇██▇█████████▇█▇▇▇▇█▇▇█▇██
+wandb:           test/target smooth return ▁▇▆▆▇▇▇▇▇▇███▇▇██▇█████████▇█▇▇▇▇█▇▇█▇██
+wandb:                   train/policy_loss █▄▄▃▅▂▃▂▂▂▃▂▂▂▂▁▂▃▁▂▁▂▁▁▃▂▁▂▂▃▂▃▃▂▃▂▂▁▂▃
+wandb:                            train/q1 ▁▇█▇▇▇▆▆▅▅▅▅▄▅▄▄▄▄▄▄▄▄▄▅▄▃▄▄▃▃▄▃▃▃▃▃▃▃▃▄
+wandb:                    train/q_behavior ▁▇█▇▇▇▆▆▅▅▅▅▄▅▄▄▄▄▄▄▄▄▄▅▄▃▄▄▃▃▄▃▃▃▃▃▃▃▃▄
+wandb:                      train/q_policy ▁▇█▇▇▇▆▆▆▅▅▅▄▅▄▄▄▄▄▄▄▄▅▅▄▃▄▄▃▃▄▃▃▃▃▃▃▃▃▄
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 948.78317
+wandb:        test/target normalized score 8.23315
+wandb:                  test/target return 242.117
+wandb: test/target smooth normalized score 8.21559
+wandb:           test/target smooth return 241.54458
+wandb:                   train/policy_loss -2.25392
+wandb:                            train/q1 48.04108
+wandb:                    train/q_behavior 47.80785
+wandb:                      train/q_policy 48.73804
+wandb: 
+wandb: Synced hopper-friction5.0mediummedium: https://wandb.ai/jjineeq/mobody/runs/govv2wg8
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260508_062206-govv2wg8/logs"
+logs/MOBODY_walker2d-friction_shift0.1_seed1.log,error,19306,MOBODY,walker2d-friction,1,0.1,,,,,0.019652752205729485,Error:,"wandb: Run history:
+wandb:                  test/source return ▃▇▆▆█▆▃▂▃▂▄▂▂▂▃▂▂▂▂▂▁▁▁▂▁▁▁▁▁▁▁▂▁▁▁▁▁▁▁▁
+wandb:        test/target normalized score ▂▁▃▂▂▃▃▄▃▃▂▂▃▃▃▁▄▁▂▃█▃▃▃▁▅▄▁▅▅▂▂▃▃▁▄▁▁▄▁
+wandb:                  test/target return ▂▁▃▂▂▃▃▄▃▃▂▂▃▃▃▁▄▁▂▃█▃▃▃▁▅▄▁▅▅▂▂▃▃▁▄▁▁▄▁
+wandb: test/target smooth normalized score ▁▃▃▂▂▂▂▂▂▄▂▃▅▂▅▂▃▃▃▄█▃▃▂▄▄▄▅█▅▁▂▃▃▄▃▃▂▃▃
+wandb:           test/target smooth return ▁▃▃▂▂▂▂▂▂▄▂▃▅▂▅▂▃▃▃▄█▃▃▂▄▄▄▅█▅▁▂▃▃▄▃▃▂▃▃
+wandb:                   train/policy_loss ▂▁▁▁▁▂▃▄▅▄▄▅▆▅▆▆▆█▆█▇▇▆▆▇▆▇▆▆▅▇▇▆▇▇▆█▆▆▇
+wandb:                            train/q1 ▂▆████▆▅▄▅▅▄▃▄▃▃▃▁▃▁▂▂▃▃▂▄▃▃▃▃▂▂▃▂▂▃▁▃▃▂
+wandb:                    train/q_behavior ▂▆████▆▅▄▅▅▄▃▄▃▃▃▁▃▁▂▂▃▃▂▄▃▃▃▃▂▂▃▂▂▃▁▃▃▂
+wandb:                      train/q_policy ▂▆████▆▅▅▅▅▄▃▄▃▃▃▁▃▁▂▂▃▃▃▄▃▃▃▄▂▂▃▂▂▃▁▃▃▂
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 592.58446
+wandb:        test/target normalized score 9.78981
+wandb:                  test/target return 338.04815
+wandb: test/target smooth normalized score 13.99265
+wandb:           test/target smooth return 478.84749
+wandb:                   train/policy_loss -0.95139
+wandb:                            train/q1 54.00239
+wandb:                    train/q_behavior 52.43886
+wandb:                      train/q_policy 57.2821
+wandb: 
+wandb: Synced walker2d-friction0.1mediummedium: https://wandb.ai/jjineeq/mobody/runs/oii288md
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260503_162437-oii288md/logs"
+logs/MOBODY_walker2d-friction_shift0.5_seed1.log,error,18863,MOBODY,walker2d-friction,1,0.5,,,,,0.10198503732681274,Error:,"wandb: Run history:
+wandb:                  test/source return ▁▇▆▆▇▆▇▇▆▆▇▇▇▆██▇▆▆▆▆▆▇▇▆▇█▅▇▆▆▇▇█▇▇▇█▇▅
+wandb:        test/target normalized score ▁▇▆▆▆▇▇▆▇▄▆▇▆▇▆▇█▇▆▆▄▇▇▆▇█▆█▆▇▆████▇▇▆▇▇
+wandb:                  test/target return ▁▇▆▆▆▇▇▆▇▄▆▇▆▇▆▇█▇▆▆▄▇▇▆▇█▆█▆▇▆████▇▇▆▇▇
+wandb: test/target smooth normalized score ▁▆▆▇█▇▇▇▇▇▇█▇█▇██▇▇▇▇▇█▇██▇█▇▇▇██▇█▇█▇▇▇
+wandb:           test/target smooth return ▁▆▆▇█▇▇▇▇▇▇█▇█▇██▇▇▇▇▇█▇██▇█▇▇▇██▇█▇█▇▇▇
+wandb:                   train/policy_loss █▃▄▄▃▃▂▂▃▁▃▂▃▁▁▂▃▂▁▂▂▂▂▂▁▃▂▂▁▁▂▂▂▂▂▂▁▂▂▂
+wandb:                            train/q1 ▁▅▇█████████████████████████████████████
+wandb:                    train/q_behavior ▁▅▇█████████████████████████████████████
+wandb:                      train/q_policy ▁▅▇█████████████████████████████████████
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 3018.88116
+wandb:        test/target normalized score 70.82183
+wandb:                  test/target return 2998.24269
+wandb: test/target smooth normalized score 71.18241
+wandb:           test/target smooth return 3013.45633
+wandb:                   train/policy_loss -2.28474
+wandb:                            train/q1 250.7393
+wandb:                    train/q_behavior 249.60249
+wandb:                      train/q_policy 250.32442
+wandb: 
+wandb: Synced walker2d-friction0.5mediummedium: https://wandb.ai/jjineeq/mobody/runs/avb5m0iy
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260504_113808-avb5m0iy/logs"
+logs/MOBODY_walker2d-friction_shift2.0_seed1.log,error,19133,MOBODY,walker2d-friction,1,2.0,,,,,0.045806609094142914,Error:,"wandb: Run history:
+wandb:                  test/source return ▁▇▇█▇▆▇▇██▇▇▇▇▇▆▇█▇▇█▇▇▇▇█▇▇█▇▇▆▆▇█▇▇▇▇▇
+wandb:        test/target normalized score ▁▃█▇███▇▆▄▇▃▇▆▇█▁█▂▁▇██▆█▆▅█▅█▃▁▄▆█▅▆▄▇▅
+wandb:                  test/target return ▁▃█▇███▇▆▄▇▃▇▆▇█▁█▂▁▇██▆█▆▅█▅█▃▁▄▆█▅▆▄▇▅
+wandb: test/target smooth normalized score ▁▄▆████▇▇▇▆▅▆▇▆▆▄▇▆▇▆▇▆▆▆▅▇▇▆▆▇▅▆▇▇▆▇▆▇▆
+wandb:           test/target smooth return ▁▄▆████▇▇▇▆▅▆▇▆▆▄▇▆▇▆▇▆▆▆▅▇▇▆▆▇▅▆▇▇▆▇▆▇▆
+wandb:                   train/policy_loss █▅▅▄▃▂▄▅▄▃▃▃▂▃▂▃▃▃▂▂▃▃▃▃▂▂▂▂▄▁▂▂▂▂▂▂▂▂▂▁
+wandb:                            train/q1 ▁▅▇▇█▇▇███▇████████████████████████▇██▇▇
+wandb:                    train/q_behavior ▁▅▇▇█▇▇██▇▇████████████████████████▇██▇▇
+wandb:                      train/q_policy ▁▅▇▇█▇▇███▇████████████████████████▇██▇▇
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 3218.01209
+wandb:        test/target normalized score 55.48271
+wandb:                  test/target return 2878.51603
+wandb: test/target smooth normalized score 57.51739
+wandb:           test/target smooth return 2983.70834
+wandb:                   train/policy_loss -2.35882
+wandb:                            train/q1 267.42606
+wandb:                    train/q_behavior 266.6864
+wandb:                      train/q_policy 267.92471
+wandb: 
+wandb: Synced walker2d-friction2.0mediummedium: https://wandb.ai/jjineeq/mobody/runs/m9a9xkd1
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260507_053251-m9a9xkd1/logs"
+logs/MOBODY_walker2d-friction_shift5.0_seed1.log,error,19115,MOBODY,walker2d-friction,1,5.0,,,,,0.18289630115032196,Error:,"wandb: Run history:
+wandb:                  test/source return ▁▇▇▆█▇▇▇█▇███▇█▇▇▆▇▇▇▇▇█▆█▇█▆▆▇█▅██▇▇▇▇▇
+wandb:        test/target normalized score ▁▂▃▂▃▂▄▂▃▂▂▂▃▂▄▃▆▂▄▄▃▃▆▅▅▄▄▄█▄▇▄▆▄▄▃▅▅▄▄
+wandb:                  test/target return ▁▂▃▂▃▂▄▂▃▂▂▂▃▂▄▃▆▂▄▄▃▃▆▅▅▄▄▄█▄▇▄▆▄▄▃▅▅▄▄
+wandb: test/target smooth normalized score ▁▂▄▄▅▃▄▄▄▄▄▃▅▄▄▅▆▅▄▄▅▄▅▆▆▅▆▄▇▅█▆█▅▇▅▅▆▅▅
+wandb:           test/target smooth return ▁▂▄▄▅▃▄▄▄▄▄▃▅▄▄▅▆▅▄▄▅▄▅▆▆▅▆▄▇▅█▆█▅▇▅▅▆▅▅
+wandb:                   train/policy_loss █▄▄▃▃▃▁▂▁▂▂▂▂▂▂▁▁▂▁▁▁▂▂▂▂▁▂▁▁▂▁▂▂▁▃▁▂▂▁▁
+wandb:                            train/q1 ▁▅▆▇▇▇███████████████▇█████████████████▇
+wandb:                    train/q_behavior ▁▅▆▇▇▇███████████████▇████████████▇████▇
+wandb:                      train/q_policy ▁▅▆▇▇▇███████████████▇█████████████████▇
+wandb: 
+wandb: Run summary:
+wandb:                  test/source return 2647.7368
+wandb:        test/target normalized score 22.11847
+wandb:                  test/target return 1111.30405
+wandb: test/target smooth normalized score 19.16501
+wandb:           test/target smooth return 964.25869
+wandb:                   train/policy_loss -2.36671
+wandb:                            train/q1 214.71924
+wandb:                    train/q_behavior 213.82408
+wandb:                      train/q_policy 214.64986
+wandb: 
+wandb: Synced walker2d-friction5.0mediummedium: https://wandb.ai/jjineeq/mobody/runs/9jx3e7o5
+wandb: Synced 6 W&B file(s), 0 media file(s), 0 artifact file(s) and 0 other file(s)
+wandb: Find logs at: ./wandb/run-20260507_235416-9jx3e7o5/logs"

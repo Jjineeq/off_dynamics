@@ -9,7 +9,9 @@ Update_draft.md
 runs_friction_shift_sweep_seed1/*
 wandb/*
 dataset/*
-
+output/*
+runs_friction_shift_sweep_seed1to10/*
+runs_friction_shift_sweep_seed1_proposed_v2/*
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
